@@ -24,3 +24,13 @@ spotifyApi.clientCredentialsGrant().then(
     console.log('Something went wrong when retrieving an access token', err);
   }
 );
+
+// spotifyApi.getFeaturedPlaylists().then(
+//   function(data) {
+//     console.log("playlists")
+//   }, 
+//   function(err) {
+//     console.log("wrong")
+//   }
+// );
+

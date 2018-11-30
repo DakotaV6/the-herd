@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const routes = require("./spotify.js");
 
+app.use(express.static("./dev/public"))
 app.use(express.json());
 app.use("/", routes);
 

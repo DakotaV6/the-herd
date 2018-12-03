@@ -1,4 +1,5 @@
-<section class="component-section">
+
+<section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="component-section">
     <p class="game-title">Pick a gummy bear.</p>
     <div class="game-container">
         <img jiggle class="gummy-bear" src="images/purple-gummy.png">
@@ -6,5 +7,5 @@
         <img jiggle class="gummy-bear" src="images/green-gummy.png">
         <img jiggle class="gummy-bear" src="images/yellow-gummy.png">
     </div>
-    <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
+    <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.bounceOut();"></i>
 </section>

@@ -4,10 +4,14 @@ const home = {
         <button ng-click= "$ctrl.getPlaylists();">Get info</button>
         <section ng-repeat= "playlist in $ctrl.playlists">
             <p>{{playlist.name}}</p>
+<<<<<<< HEAD
         </section>
 
         
     `,
+=======
+        </section>`,
+>>>>>>> master
 
     controller: ["ProjectService", function(ProjectService) {
         const vm = this; 
@@ -15,13 +19,12 @@ const home = {
             ProjectService.getPlaylists().then((response) => {
                 console.log(response);
                 vm.playlists = response.data.playlists.items; 
-            })
-        }
-        
+            });
+        };
     }]
 }; 
 
 
 angular
     .module("App")
-    .component("home", home)
+    .component("home", home);

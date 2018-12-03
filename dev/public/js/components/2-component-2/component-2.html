@@ -1,7 +1,11 @@
-<section ng-class= "{'animated bounceInRight': $ctrl.bounceInBool === true}" class= "component-section">
-    <p>Option 1</p>
-    <p>Option 2</p>
-    <p>Option 3</p>
-    <p>Option 4</p>
+
+<section class= "component-section">
+    <p class="game-title">Choose a color.</p>
+    <section ng-class= "{'animated bounceInRight': $ctrl.bounceInBool === true}" class= "component-section" class="game-container" ng-style="{'background-image': screenColor}">
+        <section class="color-shapes" id="color-opt1" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(42, 35, 114, 1))'"></section>
+        <section class="color-shapes" id="color-opt2" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(35, 114, 106, 1))'"></section>
+        <section class="color-shapes" id="color-opt3" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(132, 35, 35, 1))'"></section>
+        <section class="color-shapes" id="color-opt4" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(172, 37, 181, 1))'"></section>
+    </section>
     <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
 </section>

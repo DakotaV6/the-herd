@@ -1,6 +1,7 @@
+
 <section class= "component-section">
     <p class="game-title">Choose a color.</p>
-    <section class="game-container" ng-style="{'background-image': screenColor}">
+    <section ng-class= "{'animated bounceInRight': $ctrl.bounceInBool === true}" class= "component-section" class="game-container" ng-style="{'background-image': screenColor}">
         <section class="color-shapes" id="color-opt1" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(42, 35, 114, 1))'"></section>
         <section class="color-shapes" id="color-opt2" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(35, 114, 106, 1))'"></section>
         <section class="color-shapes" id="color-opt3" ng-click="screenColor='linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(132, 35, 35, 1))'"></section>

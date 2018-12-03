@@ -13,5 +13,17 @@ angular
             .when("/component-2", {
                 template: "<component-2></component-2>"
             })
+            .when("/component-3", {
+                template: "<component-3></component-3>"
+            })
+            .when("/component-4", {
+                template: "<component-4></component-4>"
+            })
+            .when("/component-5", {
+                template: "<component-5></component-5>"
+            })
+            .when("/results", {
+                template: "<results></results>"
+            })
             .otherwise({ redirectTo: "/about" });
     }]);

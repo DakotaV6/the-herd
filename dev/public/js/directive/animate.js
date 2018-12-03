@@ -4,10 +4,12 @@ function jiggle() {
     return {
         restrict: "A",
         link: function($scope, $element, $attrs) {
-            $element.on("click", (event) => {
-                if(event.target.classList.length < 3){
-                event.target.classList += " animated jello ";
-                }
+            $element
+            .on("mouseenter", (event) => {
+                event.target.classList += " animated jello";
+            })
+            .on("mouseleave", (event) => {
+                event.target.classList -= " animated jello";
             });
         }
     };

@@ -1,3 +1,24 @@
-.gummyclick {
-    
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(150, 150, 150, 1));
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+}
+.side-bar {
+    height: 74px;
+    width: 100vw;
+    background-color: rgba(216, 216, 216, 0.5);
+}
+.logo {
+    position: relative;
+    top: 50%;
+    transform: translateY( -50%);
+    margin: 0;
+    text-align: center;
+}
+.little-a {
+    font-size: .8em;
 }

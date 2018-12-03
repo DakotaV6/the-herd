@@ -2,8 +2,11 @@
 
 const gummyBears = {
     templateUrl: "js/components/gummy-bears/gummy-bears.html",
-    controller: [function() {
+    controller: ["ProjectService", "$location", function(ProjectService, $location){
         const vm = this;
+        vm.nextUp = () => {
+            $location.path("/component-2");
+        }; 
     }]
 }
 

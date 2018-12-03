@@ -1,7 +1,7 @@
 "use strict";
+
 const results = {
     templateUrl: "js/components/results/results.html",
-
     controller: ["ProjectService", function(ProjectService) {
         const vm = this; 
         vm.getPlaylists = () => {

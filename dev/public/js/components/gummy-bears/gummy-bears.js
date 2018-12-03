@@ -2,7 +2,7 @@
 
 const gummyBears = {
     templateUrl: "js/components/gummy-bears/gummy-bears.html",
-    controller: ["ProjectService", "$location", function(ProjectService, $location){
+    controller: ["ProjectService", "$location","$timeout", "$scope", function(ProjectService, $location, $timeout, $scope){
         const vm = this;
         // vm.nextUp = () => {
         //     $location.path("/component-2");
@@ -10,7 +10,11 @@ const gummyBears = {
         vm.bounceOutBool = false;
         vm.bounceOut = () => {
             vm.bounceOutBool= true;
-            $location.path("/component-2")
+            $timeout(function() {
+                $scope.$apply(function() {
+                    $location.path("/component-2");
+                });
+            }, 500);
         };
 
         // vm.fadeInLeft = () => {

@@ -1,18 +1,7 @@
 "use strict";
-const home = {
-    template: `
-        <button ng-click= "$ctrl.getPlaylists();">Get info</button>
-        <section ng-repeat= "playlist in $ctrl.playlists">
-            <p>{{playlist.name}}</p>
-<<<<<<< HEAD
-        </section>
 
-        
-    `,
-=======
-        </section>`,
->>>>>>> master
-
+const results = {
+    templateUrl: "js/components/results/results.html",
     controller: ["ProjectService", function(ProjectService) {
         const vm = this; 
         vm.getPlaylists = () => {
@@ -27,4 +16,4 @@ const home = {
 
 angular
     .module("App")
-    .component("home", home);
+    .component("results", results);

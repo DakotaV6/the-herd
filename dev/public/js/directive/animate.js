@@ -9,7 +9,7 @@ function jiggle() {
                 event.target.classList += " animated jello";
             })
             .on("mouseleave", (event) => {
-                event.target.classList -= " animated jello";
+                event.target.classList = "gummy-bear";
             });
         }
     };

@@ -18,6 +18,17 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
 }
+
+.view-animation.ng-enter {
+    -webkit-animation: bounceInRight 0.5s;
+    animation: bounceInRight 0.5s;
+}
+
+.view-animation.ng-leave {
+    -webkit-animation: bounceOutLeft 0.5s;
+    animation: bounceOutLeft 0.5s;
+
+}
 /**********************/
 /*******SIDEBAR********/
 /**********************/
@@ -32,6 +43,10 @@ body {
     transform: translateY( -50%);
     margin: 0;
     text-align: center;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 .little-a {
     font-size: .8em;
@@ -56,6 +71,7 @@ body {
     width:100%;
     border-radius: 8px;
 }
+
 .game-title {
     text-align: center;
 }

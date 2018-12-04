@@ -1,16 +1,22 @@
 "use strict";
 
-const component2 = {
+const colors = {
     templateUrl: "js/components/2-component-2/component-2.html",
-    controller: ["$location", function($location) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
         const vm = this;
-        vm.bounceInBool= true;
-        vm.nextUp = () => {
-            $location.path("/component-3");
+        vm.bounceInBool = true
+        vm.bounceOutBool = false;
+        vm.bounceOut = () => {
+            vm.bounceOutBool= true;
+            $timeout(function() {
+                $scope.$apply(function() {
+                    $location.path("/component-2");
+                });
+            }, 1000);
         };
     }]
 };
 
 angular 
     .module("App")
-    .component("component2", component2);
+    .component("colors", colors);

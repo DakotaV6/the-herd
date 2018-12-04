@@ -6,7 +6,7 @@ function colorPicker() {
         link: function($scope, $element, $attrs) {
             $element
             .on("click", (event) => {
-                event.target.offsetParent.offsetParent.classList = event.target.classList[1];
+                event.target.offsetParent.classList = event.target.classList[1];
             });
         }
     };

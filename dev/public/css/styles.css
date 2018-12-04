@@ -110,22 +110,112 @@ body {
     width: 35%;
 }
 
+.capybara-color-1 {
+    fill: #c39b6e;
+}
+
+.capybara-color-2 {
+    fill: #ac8a67;
+}
+
+.capybara-color-3 {
+    fill: #c0c0c6;
+}
+
+.capybara-color-4 {
+    fill: #9e9ea6;
+}
+
+.capybara-color-5 {
+    fill: #464655;
+}
+
+.capybara-color-6 {
+    fill: #878791;
+}
+
 .capybara-eyes {
     animation: blink 3s infinite;
 }
 
+
+.dog-color-1 {
+    fill: #963;
+}
+
+.dog-color-2 {
+    fill: #ededed;
+}
+
+.dog-color-3 {
+    fill: #878786;
+}
+
+.dog-color-4 {
+    fill: #7c522c;
+}
+
+
 .dog-eyes {
-    animation: blink 30s infinite;
+    /* animation: blink 30s infinite; */
+}
+
+.dog-eye {
+    height: 20px;
+    width: 20px;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.fox-color-1 {
+    fill: #f7f6e2;
+}
+
+.fox-color-2 {
+    fill: #c9c7b8;
+}
+
+.fox-color-3 {
+    fill: #ffa54b;
+}
+
+.fox-color-4 {
+    fill: #ff8c46;
 }
 
 .fox-eyes {
     animation: blink 3s infinite;
 }
 
-.giraffe-eyes {
-    animation: blink 3s infinite;
+.giraffe-color-1 {
+    fill: #f3b73f;
 }
 
+.giraffe-color-2 {
+    fill: #e7a53b;
+}
+
+.giraffe-color-3 {
+    fill: #db9437;
+}
+
+.giraffe-color-4 {
+    fill: #ffc843;
+}
+
+.giraffe-eyes {
+    fill: black;
+    /* animation: blink 3s infinite; */
+}
+
+@keyframes blink {
+    0% { height: 20px; }
+    3% { transform: translate(0px, 10px); height: 1px; }
+    5% { transform: translate(0px, 0px); height: 20px; }
+  }
+
+/* 
   @keyframes blink {
     90% {
       transform: none;
@@ -137,4 +227,4 @@ body {
     100% {
       animation-timing-function: ease-out;
     }
-  }
+  } */

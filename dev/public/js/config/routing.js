@@ -8,10 +8,10 @@ angular
                 template: "<about></about>"
             })
             .when("/component-1", {
-                template: "<gummy-bears></gummy-bears>"
+                template: "<colors></colors>" 
             })
             .when("/component-2", {
-                template: "<component-2></component-2>"
+                template: "<gummy-bears></gummy-bears>"
             })
             .when("/component-3", {
                 template: "<component-3></component-3>"

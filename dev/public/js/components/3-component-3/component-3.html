@@ -1,5 +1,5 @@
 <section class="component-section">
-    <p class="game-title">Pick an animal.</p>
+    <p ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true" class="game-title">Pick an animal.</p>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
         <svg class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <defs>
@@ -46,5 +46,5 @@
         <img class="animals" src="images/capybara.svg">
         <img class="animals" src="images/giraffe.svg">
     </section>
-    <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
+    <i ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.bounceOut();"></i>
 </section>

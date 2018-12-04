@@ -1,8 +1,11 @@
 "use strict";
 const sideBar = {
     templateUrl: "js/components/side-bar/side-bar.html",
-    controller: [function() {
-        const vm = this; 
+    controller: ["$location", function($location) {
+        const vm = this;
+        vm.goHome = () => {
+            $location.path("/about");
+        };
     }]
 }; 
 

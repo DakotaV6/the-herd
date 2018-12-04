@@ -4,6 +4,10 @@ const gummyBears = {
     templateUrl: "js/components/2-gummy-bears/gummy-bears.html",
     controller: ["ProjectService", "$location","$timeout", "$scope", function(ProjectService, $location, $timeout, $scope){
         const vm = this;
+        vm.btnDisplay = false;
+        vm.showBtn = () => {
+            vm.btnDisplay = true;
+        };
         vm.bounceOut = () => {
             // $timeout(function() {
             //     $scope.$apply(function() {

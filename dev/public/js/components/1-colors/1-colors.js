@@ -2,9 +2,8 @@
 
 const colors = {
     templateUrl: "js/components/1-colors/1-colors.html",
-    controller: ["$location", "$timeout", "$scope", function($location, $timeout, $scope) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
         const vm = this;
-        vm.bounceInBool= true;
         vm.bounceOutBool = false;
         vm.bounceOut = () => {
             vm.bounceOutBool= true;
@@ -12,7 +11,7 @@ const colors = {
                 $scope.$apply(function() {
                     $location.path("/component-2");
                 });
-            }, 500);
+            }, 1000);
         };
     }]
 };

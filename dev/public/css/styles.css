@@ -111,22 +111,22 @@ body {
 }
 
 .capybara-eyes {
-
+    animation: blink 3s infinite;
 }
 
 .dog-eyes {
-    animation: squeeze 3s infinite;
+    animation: blink 30s infinite;
 }
 
 .fox-eyes {
-
+    animation: blink 3s infinite;
 }
 
 .giraffe-eyes {
-
+    animation: blink 3s infinite;
 }
 
-  @keyframes squeeze {
+  @keyframes blink {
     90% {
       transform: none;
       animation-timing-function: ease-in;

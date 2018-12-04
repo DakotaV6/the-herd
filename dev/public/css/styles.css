@@ -71,9 +71,8 @@ body {
 /*****GUMMY BEARS******/
 /**********************/
 .gummy-bear {
-    width: 125px;
-    height: 150px;
-    margin: 10px;
+    height: 40vw;
+    margin: 0 30px;
 }
 
 /**********************/
@@ -102,9 +101,9 @@ body {
     background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(172, 37, 181, 1));
 }
 
-/**********************/
+/*******************/
 /******ANIMALS******/
-/**********************/
+/*******************/
 
 .animals {
     width: 35%;
@@ -138,3 +137,6 @@ body {
       animation-timing-function: ease-out;
     }
   }
+/******************/
+/******SHAPES******/
+/******************/

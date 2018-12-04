@@ -1,9 +1,10 @@
 "use strict";
 
 const colors = {
-    templateUrl: "js/components/1-colors/1-colors.html",
+    templateUrl: "js/components/2-component-2/component-2.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
         const vm = this;
+        vm.bounceInBool = true
         vm.bounceOutBool = false;
         vm.bounceOut = () => {
             vm.bounceOutBool= true;

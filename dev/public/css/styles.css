@@ -20,14 +20,37 @@ body {
 }
 
 .view-animation.ng-enter {
-    -webkit-animation: bounceInRight 0.5s;
-    animation: bounceInRight 0.5s;
+    -webkit-animation: bounceInRight 1s;
+    animation: bounceInRight 1s;
 }
 
 .view-animation.ng-leave {
-    -webkit-animation: bounceOutLeft 0.5s;
-    animation: bounceOutLeft 0.5s;
+    -webkit-animation: bounceOutLeft 1s;
+    animation: bounceOutLeft 1s;
 
+}
+/********************/
+/*******ABOUT********/
+/********************/
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 359px;
+    width: 320px;
+}
+.tag-line {
+    font-size: 20px;
+    text-align: center;
+}
+#join-us {
+    font-size: 20px;
+    background: none;
+    color: rgba(216, 216, 216, 0.5);
+    border: 2px solid rgba(216, 216, 216, 0.5);
+    border-radius: 6px;
+    padding: 10px 15px;
 }
 /**********************/
 /*******SIDEBAR********/
@@ -55,20 +78,21 @@ body {
 /*******COMPONENTS*******/
 /************************/
 .component-container {
-    height: (100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 .game-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgba(216, 216, 216, 0.2);
     height: 359px;
-    width:100%;
+    width: 100%;
+    max-width: 359px;
     border-radius: 8px;
 }
 
@@ -76,6 +100,7 @@ body {
     text-align: center;
 }
 .next-btn {
+    cursor: pointer;
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -83,26 +108,44 @@ body {
     opacity: .7;
     font-size: 45px;
 }
+
+.next-btn.ng-hide-remove {
+    -webkit-animation: rotateInDownLeft 2s;
+    animation: rotateInDownLeft 2s;
+
+}
+
+.next-btn:hover{
+    cursor: pointer;
+}
 /**********************/
 /*****GUMMY BEARS******/
 /**********************/
 .gummy-bear {
     height: 40vw;
+    max-height: 144px;
     margin: 0 30px;
 }
 
+.gummy-bear:hover{
+    cursor: pointer;
+}
 /**********************/
 /*****COLOR SHAPES*****/
 /**********************/
 
 .color-shapes {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     /* box-shadow: 0px 0px 20px white; */
 }
+
+.color-shapes:hover{
+    cursor: pointer;
+}
 .blue-gradient {
-    background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(42, 35, 114, 1));
+    background-image: linear-gradient(225deg, rgb(0, 0, 0), rgba(42, 35, 114, 1));
 }
 .teal-gradient {
     background-image:  linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(35, 114, 106, 1));
@@ -121,57 +164,47 @@ body {
 .animals {
     width: 35%;
 }
-
+.animals:hover{
+    cursor: pointer;
+}
+/* CAPYBARA */
 .capybara-color-1 {
-    fill: #c39b6e;
-}
-
-.capybara-color-2 {
-    fill: #ac8a67;
-}
-
-.capybara-color-3 {
-    fill: #c0c0c6;
-}
-
-.capybara-color-4 {
-    fill: #9e9ea6;
-}
-
-.capybara-color-5 {
-    fill: #464655;
-}
-
-.capybara-color-6 {
     fill: #878791;
 }
-
+.capybara-color-2 {
+    fill: #c39b6e;
+}
+.capybara-color-3 {
+    fill: #ac8a67;
+}
+.capybara-color-4 {
+    fill: #c0c0c6;
+}
+.capybara-color-5 {
+    fill: #9e9ea6;
+}
+.capybara-color-6 {
+    fill: #464655;
+}
 .capybara-eyes {
     animation: blink 3s infinite;
 }
-
-
+/* DOG */
 .dog-color-1 {
     fill: #963;
 }
-
 .dog-color-2 {
     fill: #ededed;
 }
-
 .dog-color-3 {
     fill: #878786;
 }
-
 .dog-color-4 {
     fill: #7c522c;
 }
-
-
 .dog-eyes {
     /* animation: blink 30s infinite; */
 }
-
 .dog-eye {
     height: 20px;
     width: 20px;
@@ -179,43 +212,35 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-
+/* FOX */
 .fox-color-1 {
     fill: #f7f6e2;
 }
-
 .fox-color-2 {
     fill: #c9c7b8;
 }
-
 .fox-color-3 {
     fill: #ffa54b;
 }
-
 .fox-color-4 {
     fill: #ff8c46;
 }
-
 .fox-eyes {
     animation: blink 3s infinite;
 }
-
+/* GIRAFFE */
 .giraffe-color-1 {
-    fill: #f3b73f;
-}
-
-.giraffe-color-2 {
-    fill: #e7a53b;
-}
-
-.giraffe-color-3 {
     fill: #db9437;
 }
-
+.giraffe-color-2 {
+    fill: #f3b73f;
+}
+.giraffe-color-3 {
+    fill: #e7a53b;
+}
 .giraffe-color-4 {
     fill: #ffc843;
 }
-
 .giraffe-eyes {
     fill: black;
     /* animation: blink 3s infinite; */

@@ -1,14 +1,10 @@
-
-<section class="component-section">
-    <p
-    class="game-title">Pick a gummy bear.</p>
-    <div
-    class="game-container">
-        <img hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-blue.png">
-        <img hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-red.png">
-        <img hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-green.png">
-        <img hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-yellow.png">
+<section class="component-container">
+    <p class="game-title">Pick a gummy bear.</p>
+    <div class="game-container">
+        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-blue.png">
+        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-red.png">
+        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-green.png">
+        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-yellow.png">
     </div>
-    <i
-    class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.bounceOut();"></i>
+    <i ng-show= "$ctrl.btnDisplay === true;" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.bounceOut();"></i>
 </section>

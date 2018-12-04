@@ -1,8 +1,8 @@
 <section class="component-section">
     <p class="game-title">Pick an animal.</p>
-    <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
+    <section class="game-container">
         <!-- DOG SVG -->
-        <svg class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <svg ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>dog</title>
             <g class="dog-head">
                 <path class="dog-color-1" d="M255.93,61.88c-90.87,0-173.47,33-173.47,33V276.3c0,66,43.36,95.87,90.86,132H338.53c47.5-36.08,90.87-66,90.87-131.95V94.87S346.79,61.88,255.93,61.88Z" />
@@ -24,7 +24,7 @@
             </g>
         </svg>
         <!-- FOX SVG -->
-        <svg class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <svg ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>fox</title>
             <g class="fox-head">
                 <path class="fox-color-1" d="M214,485c0,14.9,18.8,27,42,27s42-12.1,42-27Z" />
@@ -51,7 +51,7 @@
 
         <!-- CAPYBARA SVG -->
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <svg ng-click= "$ctrl.showBtn();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
          
             <title>capybara</title>
             <g class="capybara-head">
@@ -76,7 +76,7 @@
 
         <!-- GIRAFFE SVG -->
 
-        <svg class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <svg ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <defs>
                 <style>
                     .cls-1 {
@@ -125,5 +125,5 @@
         </svg>
 
     </section>
-    <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
+    <i ng-show= "$ctrl.btnDisplay === true;" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
 </section>

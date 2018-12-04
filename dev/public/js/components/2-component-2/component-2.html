@@ -1,11 +1,11 @@
 
 <section class= "component-section">
-    <p class="game-title">Choose a color.</p>
-    <div ng-class= "{'animated bounceInRight': $ctrl.bounceInBool === true}" class="game-container">
+    <p ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-title">Choose a color.</p>
+    <div ng-class= "{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
         <div class="color-shapes blue-gradient" color-picker></div>
         <div class="color-shapes teal-gradient" color-picker></div>
         <div class="color-shapes red-gradient" color-picker></div>
         <div class="color-shapes pink-gradient" color-picker></div>
     </div>
-    <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
+    <i ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="next-btn far fa-arrow-alt-circle-right" ng-click="ng-click="$ctrl.bounceOut();"></i>
 </section>

@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(150, 150, 150, 1));
+    background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(50, 50, 50, 1));
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
@@ -85,15 +85,12 @@ body {
     border-radius: 50%;
     /* box-shadow: 0px 0px 20px white; */
 }
-
 .blue-gradient {
     background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(42, 35, 114, 1));
 }
-
 .teal-gradient {
     background-image:  linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(35, 114, 106, 1));
 }
-
 .red-gradient {
     background-image: linear-gradient(225deg, rgba(50, 20, 55, 1), rgba(132, 35, 35, 1));
 }

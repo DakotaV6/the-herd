@@ -202,16 +202,7 @@ body {
 .dog-color-4 {
     fill: #7c522c;
 }
-.dog-eyes {
-    /* animation: blink 30s infinite; */
-}
-.dog-eye {
-    height: 20px;
-    width: 20px;
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+
 /* FOX */
 .fox-color-1 {
     fill: #f7f6e2;
@@ -226,7 +217,7 @@ body {
     fill: #ff8c46;
 }
 .fox-eyes {
-    animation: blink 3s infinite;
+    
 }
 /* GIRAFFE */
 .giraffe-color-1 {
@@ -243,29 +234,7 @@ body {
 }
 .giraffe-eyes {
     fill: black;
-    /* animation: blink 3s infinite; */
-}
 
-@keyframes blink {
-    0% { height: 20px; }
-    3% { transform: translate(0px, 10px); height: 1px; }
-    5% { transform: translate(0px, 0px); height: 20px; }
-  }
-
-/* 
-  @keyframes blink {
-    90% {
-      transform: none;
-      animation-timing-function: ease-in;
-    }
-    93% {
-      transform: scale(1.2, 0.3);
-    }
-    100% {
-      animation-timing-function: ease-out;
-    }
-
-  } */
 /******************/
 /******SHAPES******/
 /******************/

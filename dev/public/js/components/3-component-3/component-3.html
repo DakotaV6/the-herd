@@ -1,6 +1,6 @@
 <section class="component-container">
     <p class="game-title">Pick an animal.</p>
-    <i ng-show= "$ctrl.btnDisplay class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
+    <i ng-show= "$ctrl.btnDisplay" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
                                                                                                        
         <!-- DOG SVG -->
@@ -22,6 +22,7 @@
             </g>
             <g class="dog-eyes">
                 <circle class="dog-eye" cx="165.05" cy="227.09" r="24.78" />
+                <animate dur="4s" attributeName="r"  repeatCount="indefinite" values="1; 1; 1; 1; 12; 1; 12" keyTimes="0; 0.25; 0.5; 0.85; 0.9; 0.95; 1"/>
                 <circle class="dog-eye" cx="346.8" cy="227.09" r="24.78" />
             </g>
         </svg>

@@ -2,14 +2,9 @@
 
 const results = {
     templateUrl: "js/components/results/results.html",
-    controller: ["ProjectService", function(ProjectService) {
+    controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this; 
-        vm.getPlaylists = () => {
-            ProjectService.getPlaylists().then((response) => {
-                console.log(response);
-                vm.playlists = response.data.playlists.items; 
-            });
-        };
+    
     }]
 }; 
 

@@ -9,6 +9,11 @@ const about = {
     vm.startQuestions = () => {
       $location.path("/component-1");
     };
+
+    vm.getPlaylists = () => {
+      ProjectService.getPlaylists();
+  };
+
     anime({
       targets: '.sound-line',
       strokeDashoffset: function (el) {

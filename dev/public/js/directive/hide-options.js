@@ -7,14 +7,14 @@ function hideGummy() {
             $element
             .on("click", (event) => {
                 console.log($element);
-                const img = event.target.attributes[3].value;
-                const gummyBears = event.target.parentElement.children;
+                const options = event.target.attributes[3].value;
+                const icon = event.target.parentElement.children;
                 let i;
-                for (i = 0; i < gummyBears.length; i++) {
-                    if (gummyBears[i].attributes[3].value === img) {
-                        gummyBears[i].hidden = false;
+                for (i = 0; i < icon.length; i++) {
+                    if (icon[i].attributes[3].value === options) {
+                        icon[i].hidden = false;
                     } else {
-                    gummyBears[i].hidden = true;
+                    icon[i].hidden = true;
                     }
                 }
             });

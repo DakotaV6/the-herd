@@ -2,11 +2,11 @@
 <section class= "component-container">
     <p class="game-title">Choose a color.</p>
     <div class="game-container">
-        <div ng-click= "$ctrl.showBtn();" class="color-shapes blue-gradient" color-picker></div>
-        <div ng-click= "$ctrl.showBtn();" class="color-shapes teal-gradient" color-picker></div>
-        <div ng-click= "$ctrl.showBtn();" class="color-shapes red-gradient" color-picker></div>
-        <div ng-click= "$ctrl.showBtn();" class="color-shapes pink-gradient" color-picker></div>
+        <div ng-click= "$ctrl.showBtn(); $ctrl.addScore2();" hide-options class="color-shapes blue-gradient" color-picker></div>
+        <div ng-click= "$ctrl.showBtn(); $ctrl.addScore3();" hide-options class="color-shapes teal-gradient" color-picker></div>
+        <div ng-click= "$ctrl.showBtn(); $ctrl.addScore1();" hide-options class="color-shapes red-gradient" color-picker></div>
+        <div ng-click= "$ctrl.showBtn();" hide-options class="color-shapes pink-gradient" color-picker></div>
     </div>
-    <i ng-show= "$ctrl.btnDisplay === true;" class="next-btn far fa-arrow-alt-circle-right" ng-click= "$ctrl.bounceOut();"></i>
+    <i ng-show= "$ctrl.btnDisplay === true;" class="next-btn far fa-arrow-alt-circle-right" ng-click= "$ctrl.bounceOut(); $ctrl.getLinks();"></i>
 
 </section>

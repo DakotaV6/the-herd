@@ -1,6 +1,6 @@
 "use strict";
 
-function hideGummy() {
+function hideOptions() {
     return {
         restrict: "A",
         link: function($scope, $element, $attrs) {
@@ -24,4 +24,4 @@ function hideGummy() {
 
 angular
 .module("App")
-.directive("hideGummy", hideGummy);
+.directive("hideOptions", hideOptions);

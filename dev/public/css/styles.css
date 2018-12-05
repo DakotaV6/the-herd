@@ -51,7 +51,7 @@ body {
     border: 2px solid rgba(216, 216, 216, 0.5);
     border-radius: 6px;
     padding: 10px 15px;
-    animation: myfirst 7s;
+    animation: myfirst 10s;
     -webkit-animation:myfirst 5s infinite;
     -webkit-transition: all 0.3s ease-out; 
 }
@@ -63,10 +63,9 @@ body {
 }
 
 @-webkit-keyframes myfirst {
-    0% {color:purple; border: 2px solid purple;} 
-    35% {color: lightskyblue; border: 2px solid lightskyblue;}
-    65% {color: lightgreen; border: 2px solid lightgreen}
-    100% {color:rgba(216, 216, 216, 0.5); border: 2px solid rgba(216, 216, 216, 0.5);}
+    0% {color: darkblue; border: 2px solid darkblue;} 
+    50% {color: lightskyblue; border: 2px solid lightskyblue;}
+    100% {color: lightgreen; border: 2px solid lightgreen;}
 } 
 /**********************/
 /*******SIDEBAR********/

@@ -9,6 +9,10 @@ function ProjectService($http, $location) {
             return data; 
         }); 
     };
+    self.scoreBoard= 0;
+    self.addScore10 = () => {
+        scoreBoard += 10;
+    }
 
 }
 

@@ -4,7 +4,8 @@
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
                                                                                                        
         <!-- DOG SVG -->
-        <svg hide-options ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <section class="animal" hide-animal></section>
+        <svg ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>dog</title>
             <g class="dog-head">
                 <path class="dog-color-1" d="M255.93,61.88c-90.87,0-173.47,33-173.47,33V276.3c0,66,43.36,95.87,90.86,132H338.53c47.5-36.08,90.87-66,90.87-131.95V94.87S346.79,61.88,255.93,61.88Z" />
@@ -28,7 +29,8 @@
         </svg>
 
         <!-- FOX SVG -->
-        <svg hide-options ng-click= "$ctrl.showBtn(); $ctrl.addScore1();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <section class="animal" hide-animal></section>
+        <svg ng-click= "$ctrl.showBtn();" hide-animal class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>fox</title>
             <g class="fox-head">
                 <path class="fox-color-1" d="M214,485c0,14.9,18.8,27,42,27s42-12.1,42-27Z" />
@@ -54,7 +56,8 @@
         </svg>
 
         <!-- CAPYBARA SVG -->
-        <svg hide-options ng-click= "$ctrl.showBtn(); $ctrl.addScore2();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <section class="animal" hide-animal></section>
+        <svg ng-click= "$ctrl.showBtn();" hide-animal class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>capybara</title>
             <g id="capybara-face">
                 <path class="capybara-color-1" d="M181.7,65.85S141.45,0,132.16,0s-8.26,98.87-8.26,98.87Z" />
@@ -75,7 +78,8 @@
         </svg>
 
         <!-- GIRAFFE SVG -->
-        <svg hide-options ng-click= "$ctrl.showBtn(); $ctrl.addScore3();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <section class="animal" hide-animal></section>
+        <svg ng-click= "$ctrl.showBtn();" hide-animal class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>giraffe</title>
             <g id="giraffe-head">
                 <path class="giraffe-color-1" d="M355.6,45.2a45.28,45.28,0,0,1-28.2,41.9v52.5a17.1,17.1,0,1,1-34.2,0V87.2a45.32,45.32,0,1,1,62.4-42Z" />

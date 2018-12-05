@@ -2,7 +2,7 @@
 
 const component3 = {
     templateUrl: "js/components/3-component-3/component-3.html",
-    controller: ["$location", function($location) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService, $location, $timeout, $scope) {
         const vm = this;
         vm.btnDisplay = false;
         vm.showBtn = () => {
@@ -13,7 +13,6 @@ const component3 = {
         };
     }]
 };
-
 angular 
     .module("App")
     .component("component3", component3);

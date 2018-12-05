@@ -45,13 +45,29 @@ body {
     text-align: center;
 }
 #join-us {
+    cursor: pointer;
     font-size: 20px;
     background: none;
-    color: rgba(216, 216, 216, 0.5);
+    /* color: rgba(216, 216, 216, 0.5); */
     border: 2px solid rgba(216, 216, 216, 0.5);
     border-radius: 6px;
     padding: 10px 15px;
+    animation: myfirst 10s;
+    -webkit-animation:myfirst 5s infinite;
+    -webkit-transition: all 0.3s ease-out; 
 }
+
+#join-us:hover{
+    color: lightgreen; 
+    border: 2px solid lightgreen;
+    cursor: pointer;
+}
+
+@-webkit-keyframes myfirst {
+    0% {color: darkblue; border: 2px solid darkblue;} 
+    50% {color: lightskyblue; border: 2px solid lightskyblue;}
+    100% {color: lightgreen; border: 2px solid lightgreen;}
+} 
 /**********************/
 /*******SIDEBAR********/
 /**********************/
@@ -61,15 +77,12 @@ body {
     background-color: rgba(216, 216, 216, 0.5);
 }
 .logo {
+    cursor: pointer;
     position: relative;
     top: 50%;
     transform: translateY( -50%);
     margin: 0;
     text-align: center;
-}
-
-.logo:hover {
-    cursor: pointer;
 }
 .little-a {
     font-size: .8em;
@@ -112,37 +125,26 @@ body {
 .next-btn.ng-hide-remove {
     -webkit-animation: rotateInDownLeft 2s;
     animation: rotateInDownLeft 2s;
-
-}
-
-.next-btn:hover{
-    cursor: pointer;
 }
 /**********************/
 /*****GUMMY BEARS******/
 /**********************/
 .gummy-bear {
+    cursor: pointer;
     height: 40vw;
     max-height: 144px;
     margin: 0 30px;
-}
-
-.gummy-bear:hover{
-    cursor: pointer;
 }
 /**********************/
 /*****COLOR SHAPES*****/
 /**********************/
 
 .color-shapes {
+    cursor: pointer;
     width: 140px;
     height: 140px;
     border-radius: 50%;
     /* box-shadow: 0px 0px 20px white; */
-}
-
-.color-shapes:hover{
-    cursor: pointer;
 }
 .blue-gradient {
     background-image: linear-gradient(225deg, rgb(0, 0, 0), rgba(42, 35, 114, 1));
@@ -163,8 +165,6 @@ body {
 
 .animals {
     width: 35%;
-}
-.animals:hover{
     cursor: pointer;
 }
 /* CAPYBARA */
@@ -236,3 +236,18 @@ body {
 /******************/
 /******SHAPES******/
 /******************/
+#squareOption {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    background-color: #F00;
+    opacity: .7;
+}
+#circleOption {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    background-color: yellow;
+    border-radius: 5em;
+    opacity: .7;
+}

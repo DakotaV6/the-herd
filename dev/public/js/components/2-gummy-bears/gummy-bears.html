@@ -1,10 +1,10 @@
 <section class="component-container">
     <p class="game-title">Pick a gummy bear.</p>
     <div class="game-container">
-        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-blue.png">
+        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore3();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-blue.png">
         <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-red.png">
-        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-green.png">
-        <img ng-click= "$ctrl.showBtn();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-yellow.png">
+        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore2();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-green.png">
+        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore1();" hide-options jiggle class="gummy-bear" src="images/gummy-bears/gummybear-yellow.png">
     </div>
     <i ng-show= "$ctrl.btnDisplay === true;" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.bounceOut();"></i>
 </section>

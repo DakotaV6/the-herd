@@ -10,9 +10,22 @@ function ProjectService($http, $location) {
         }); 
     };
     self.scoreBoard= 0;
-    self.addScore10 = () => {
-        scoreBoard += 10;
-    }
+    self.addScore1 = () => {
+        self.scoreBoard += 1;
+        console.log(`score is ${self.scoreBoard}`)
+    };
+    self.addScore2 = () => {
+        self.scoreBoard += 2;
+        console.log(`score is ${self.scoreBoard}`)
+    };
+    self.addScore3 = () => {
+        self.scoreBoard += 3;
+        console.log(`score is ${self.scoreBoard}`)
+    };
+    self.resetScore = () => {
+        self.scoreBoard = 0;
+        console.log(`score is ${self.scoreBoard}`)
+    };
 
 }
 

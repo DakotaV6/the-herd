@@ -9,12 +9,16 @@ const colors = {
             vm.btnDisplay = true;
         };
         vm.bounceOut = () => {
-            // $timeout(function() {
-            //     $scope.$apply(function() {
-            //         $location.path("/component-2");
-            //     });
-            // }, 1000);
             $location.path("/component-2");
+        };
+        vm.addScore1 = () => {
+            ProjectService.addScore1();
+        };
+        vm.addScore2 = () => {
+            ProjectService.addScore2();
+        };
+        vm.addScore3 = () => {
+            ProjectService.addScore3();
         };
     }]
 };

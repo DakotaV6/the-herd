@@ -255,12 +255,14 @@ body {
 /******SHAPES******/
 /******************/
 #squareOption {
+    cursor: pointer;
     width: 140px;
     height: 140px;
     background-color: #F00;
     opacity: .7;
 }
 #circleOption {
+    cursor: pointer;
     width: 140px;
     height: 140px;
     background-color: yellow;

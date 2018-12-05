@@ -20,8 +20,8 @@ body {
 }
 
 .view-animation.ng-enter {
-    -webkit-animation: bounceInRight 1s;
-    animation: bounceInRight 1s;
+    -webkit-animation: bounceInRight 1.5s;
+    animation: bounceInRight 1.5s;
 }
 
 .view-animation.ng-leave {
@@ -52,21 +52,24 @@ body {
     border: 2px solid rgba(216, 216, 216, 0.5);
     border-radius: 6px;
     padding: 10px 15px;
-    animation: myfirst 10s;
-    -webkit-animation:myfirst 5s infinite;
-    -webkit-transition: all 0.3s ease-out; 
+    animation: rainbowButton 10s;
+    -webkit-animation: rainbowButton 20s infinite;
+    /* -webkit-transition: all 0.3s ease-out;  */
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
 }
 
 #join-us:hover{
-    color: lightgreen; 
-    border: 2px solid lightgreen;
     cursor: pointer;
 }
 
-@-webkit-keyframes myfirst {
-    0% {color: darkblue; border: 2px solid darkblue;} 
-    50% {color: lightskyblue; border: 2px solid lightskyblue;}
-    100% {color: lightgreen; border: 2px solid lightgreen;}
+@-webkit-keyframes rainbowButton {
+    0% {color: cyan; border: 2px solid cyan;}
+    33% {color: rgb(88, 237, 203); border: 2px solid rgb(88, 237, 203);}
+    66% {color: lightgreen; border: 2px solid lightgreen;}
+    100% {color: greenyellow; border: 2px solid greenyellow;} 
+    
+    
 } 
 /**********************/
 /*******SIDEBAR********/

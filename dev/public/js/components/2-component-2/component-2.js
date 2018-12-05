@@ -20,6 +20,9 @@ const colors = {
         vm.addScore3 = () => {
             ProjectService.addScore3();
         };
+        vm.getLinks = () => {
+            ProjectService.playlistList(); 
+        };
     }]
 };
 

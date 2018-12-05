@@ -1,6 +1,11 @@
 <button ng-click= "$ctrl.getPlaylists();">Get info</button>
-<section ng-repeat= "playlist in $ctrl.playlists">
-    <p>{{playlist.name}}</p>
 
-    <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWU13kKnk03AP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</section>
+    <!-- <p>{{playlist.name}}</p> -->
+    <p></p>
+
+    <iframe ng-src="$ctrl.getMyPlaylist();" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+<!-- {{ playlist.id }} -->
+<!-- 
+https://open.spotify.com/embed/user/spotify/playlist -->

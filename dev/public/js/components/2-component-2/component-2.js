@@ -16,6 +16,9 @@ const colors = {
             // }, 1000);
             $location.path("/component-2");
         };
+        vm.getLinks = () => {
+            ProjectService.playlistList(); 
+        }
     }]
 };
 

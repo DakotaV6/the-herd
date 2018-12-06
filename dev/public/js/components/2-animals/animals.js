@@ -1,7 +1,7 @@
 "use strict";
 
-const component3 = {
-    templateUrl: "js/components/3-component-3/component-3.html",
+const animals = {
+    templateUrl: "js/components/2-animals/animals.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService, $location, $timeout, $scope) {
         const vm = this;
         vm.btnDisplay = false;
@@ -22,11 +22,11 @@ const component3 = {
             };
         }, 1600);
         vm.nextUp = () => {
-            $location.path("/component-4");
+            $location.path("/3");
         };
 
     }]
 };
 angular 
     .module("App")
-    .component("component3", component3);
+    .component("animals", animals);

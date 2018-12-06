@@ -298,8 +298,9 @@ body {
     border-radius: 5em;
     opacity: .7;
 }
-
-
+/******************/
+/*****RESULTS******/
+/******************/
 .new-playlist {
     cursor: pointer;
     font-size: 18px;

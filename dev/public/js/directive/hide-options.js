@@ -13,6 +13,7 @@ function hideOptions() {
                 for (i = 0; i < allOptions.length; i++) {
                     if (allOptions[i].src === selectedOption) {
                         allOptions[i].hidden = false;
+                        allOptions[i].addClass = "continuous-jello";
                     } else {
                     allOptions[i].hidden = true;
                     }

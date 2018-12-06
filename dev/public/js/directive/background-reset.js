@@ -6,7 +6,7 @@ function backgroundReset() {
         link: function($scope, $element, $attrs) {
             $element
             .on("click", (event) => {
-                event.target.offsetParent.classList = "";
+                document.querySelector("body").classList = "";
             });
         }
     };

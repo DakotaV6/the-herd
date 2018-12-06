@@ -3,7 +3,7 @@ function ProjectService($http, $location, $timeout) {
     const self = this;
     self.playlists = [];
     self.playlistLinks = [];
-    self.scoreBoard= 0;
+    self.scoreBoard = 0;
     self.getPlaylists = () => {
         return $http({
             method: "GET",
@@ -14,7 +14,7 @@ function ProjectService($http, $location, $timeout) {
     };
 
     // SCORE ADDING METHODS
-    
+
     self.addScore1 = () => {
         self.scoreBoard += 1;
         console.log(`score is ${self.scoreBoard}`)
@@ -29,18 +29,32 @@ function ProjectService($http, $location, $timeout) {
     };
     self.resetScore = () => {
         self.scoreBoard = 0;
+        self.playlists = [];
+        self.playlistLinks = [];
         console.log(`score is ${self.scoreBoard}`)
     };
-    
+
     self.playlistList = () => {
-        // console.log(self.playlists);
         for (let playlist of self.playlists) {
             self.playlistLinks.push("https://open.spotify.com/embed/user/spotify/playlist/" + playlist.id);
         }
-    }
+    };
     self.getOne = () => {
-        return self.playlistLinks[self.scoreBoard];
-    }
+        if (self.scoreBoard > self.playlistLinks.length) {
+            return "https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb";
+        } else {
+            return self.playlistLinks[self.scoreBoard];
+        }
+    };
+    self.getAnother = () => {
+        if (self.playlistLinks.length === 1) {
+            return "https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb";
+        } else {
+            self.playlistLinks.splice(self.scoreBoard, 1);
+            self.scoreBoard = Math.floor(Math.random() * self.playlistLinks.length);
+            return self.playlistLinks[self.scoreBoard];
+        }
+    };
 }
 
 

@@ -308,3 +308,9 @@ body {
     border-radius: 5em;
     opacity: .7;
 }
+
+
+.new-playlist {
+    cursor: pointer;
+    font-size: 18px;
+}

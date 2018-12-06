@@ -3,7 +3,7 @@
 angular
     .module("App")
     .config (["$routeProvider", "$sceDelegateProvider", ($routeProvider, $sceDelegateProvider) => {
-        $sceDelegateProvider.resourceUrlWhitelist(['self', "https://open.spotify.com/embed/user/spotify/playlist/**"]);
+        $sceDelegateProvider.resourceUrlWhitelist(['self', "https://open.spotify.com/embed/**"]);
         $routeProvider
             .when("/about", {
                 template: "<about></about>"
@@ -25,6 +25,12 @@ angular
             })
             .when("/results", {
                 template: "<results></results>"
+            })
+            .when("/new-playlist", {
+                template: "<new-results></new-results>"
+            })
+            .when("/extra-playlist", {
+                template: "<extra-results></extra-results>"
             })
             .otherwise({ redirectTo: "/about" });
     }]);

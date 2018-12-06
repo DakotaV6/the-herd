@@ -11,15 +11,18 @@ const gummyBears = {
         vm.bounceOut = () => {
             $location.path("/component-3");
         };
-        vm.addScore1 = () => {
-            ProjectService.addScore1();
-        };
-        vm.addScore2 = () => {
-            ProjectService.addScore2();
-        };
-        vm.addScore3 = () => {
-            ProjectService.addScore3();
-        };
+
+        $timeout (function() {
+            vm.addScore1 = () => {
+                ProjectService.addScore1();
+            };
+            vm.addScore2 = () => {
+                ProjectService.addScore2();
+            };
+            vm.addScore3 = () => {
+                ProjectService.addScore3();
+            };
+        }, 1600);
     }]
 }
 

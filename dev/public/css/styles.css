@@ -21,8 +21,8 @@ body {
 }
 
 .view-animation.ng-enter {
-    animation: bounceInRight 2s;
-    -webkit-animation: bounceInRight 2s;
+    animation: bounceInRight 1.5s;
+    -webkit-animation: bounceInRight 1.5s;
 }
 
 .view-animation.ng-leave {
@@ -150,24 +150,14 @@ body {
     margin: 0 30px;
 }
 
-.continuous-jello.ng-active {
+.cont-jello{
     -webkit-animation: 
     jello
     1.5s
-    ease-out
-    0s
-    alternate
-    infinite
-    none
-    running;;
-    animation: jello stretch
+    infinite;
+    animation: jello
     1.5s
-    ease-out
-    0s
-    alternate
-    infinite
-    none
-    running; ;
+    infinite; 
 }
 /**********************/
 /*****COLOR SHAPES*****/
@@ -311,4 +301,10 @@ body {
     background-color: yellow;
     border-radius: 5em;
     opacity: .7;
+}
+
+
+.new-playlist {
+    cursor: pointer;
+    font-size: 18px;
 }

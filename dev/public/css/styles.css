@@ -91,11 +91,7 @@ body {
 }
 .logo {
     cursor: pointer;
-    /* position: relative;
-    top: 50%;
-    transform: translateY( -50%); */
     margin: 0;
-    /* text-align: center; */
     width: 40vw;
 }
 .little-a {

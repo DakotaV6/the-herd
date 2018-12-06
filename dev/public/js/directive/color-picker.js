@@ -11,18 +11,11 @@ function colorPicker($timeout) {
                         document.querySelector("body").classList = event.target.classList[1];
                 })
                 
-            })}, 1500);
+            })}, 1600);
             
         }
     };
 }
-
-//$timeout(function() {
-//     $scope.$apply(function() {
-//         $location.path("/nextview");
-//     });
-// }, 2000);
-
 
 angular
 .module("App")

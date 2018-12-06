@@ -10,7 +10,7 @@ const colors = {
                 vm.btnDisplay = true;
             };
             
-        }, 2500);
+        }, 1600);
 
         $timeout (function() {
             vm.addScore1 = () => {
@@ -22,7 +22,7 @@ const colors = {
             vm.addScore3 = () => {
                 ProjectService.addScore3();
             };
-        }, 2500);
+        }, 1600);
         vm.getLinks = () => {
             ProjectService.playlistList(); 
         };

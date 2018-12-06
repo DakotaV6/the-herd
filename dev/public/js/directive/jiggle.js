@@ -9,11 +9,9 @@ function jiggle() {
                 event.target.classList += " animated jello";
             })
             .on("mouseleave", (event) => {
-                event.target.removeClass = "animated jello";
+                event.target.classList = "gummy-bear";
             });
-            // .on("click", (event) => {
-            //     event.target.classList += "continuous-jello";
-            // });
+
         }
     };
 }

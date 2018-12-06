@@ -2,7 +2,8 @@
 
 angular
     .module("App")
-    .config (["$routeProvider", ($routeProvider) => {
+    .config (["$routeProvider", "$sceDelegateProvider", ($routeProvider, $sceDelegateProvider) => {
+        $sceDelegateProvider.resourceUrlWhitelist(['self', "https://open.spotify.com/embed/user/spotify/playlist/**"]);
         $routeProvider
             .when("/about", {
                 template: "<about></about>"

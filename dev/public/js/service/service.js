@@ -33,10 +33,9 @@ function ProjectService($http, $location) {
         for (let playlist of self.playlists) {
             self.playlistLinks.push("https://open.spotify.com/embed/user/spotify/playlist/" + playlist.id);
         }
-        console.log(self.playlistLinks);
     }
     self.getOne = () => {
-        return playlistLinks[self.scoreBoard];
+        return self.playlistLinks[self.scoreBoard];
     }
 }
 

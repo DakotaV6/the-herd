@@ -20,14 +20,13 @@ body {
 }
 
 .view-animation.ng-enter {
-    -webkit-animation: bounceInRight 1.5s;
-    animation: bounceInRight 1.5s;
+    animation: bounceInRight 1.2s;
+    -webkit-animation: bounceInRight 1.2s;
 }
 
 .view-animation.ng-leave {
-    -webkit-animation: bounceOutLeft 1s;
     animation: bounceOutLeft 1s;
-
+    -webkit-animation: bounceOutLeft 1s;
 }
 /********************/
 /*******ABOUT********/
@@ -54,23 +53,30 @@ body {
     padding: 10px 15px;
     animation: rainbowButton 10s;
     -webkit-animation: rainbowButton 20s infinite;
-    /* -webkit-transition: all 0.3s ease-out;  */
+    /* transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;  */
+    animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
+    animation-direction: alternate;
     -webkit-animation-direction: alternate;
 }
 
 #join-us:hover{
     cursor: pointer;
 }
-
+@keyframes rainbowButton {
+    0% {color: cyan; border: 2px solid cyan;}
+    33% {color: rgb(88, 237, 203); border: 2px solid rgb(88, 237, 203);}
+    66% {color: lightgreen; border: 2px solid lightgreen;}
+    100% {color: greenyellow; border: 2px solid greenyellow;} 
+} 
 @-webkit-keyframes rainbowButton {
     0% {color: cyan; border: 2px solid cyan;}
     33% {color: rgb(88, 237, 203); border: 2px solid rgb(88, 237, 203);}
     66% {color: lightgreen; border: 2px solid lightgreen;}
     100% {color: greenyellow; border: 2px solid greenyellow;} 
-    
-    
 } 
+
 /**********************/
 /*******SIDEBAR********/
 /**********************/

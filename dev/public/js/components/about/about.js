@@ -7,7 +7,7 @@ const about = {
     const vm = this;
 
     vm.startQuestions = () => {
-      $location.path("/component-1");
+      $location.path("/1");
     };
 
     vm.getPlaylists = () => {

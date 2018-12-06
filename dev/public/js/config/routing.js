@@ -8,20 +8,20 @@ angular
             .when("/about", {
                 template: "<about></about>"
             })
-            .when("/component-1", {
+            .when("/1", {
                 template: "<colors></colors>" 
             })
-            .when("/component-2", {
+            .when("/2", {
+                template: "<animals></animals>"
+            })
+            .when("/3", {
                 template: "<gummy-bears></gummy-bears>"
             })
-            .when("/component-3", {
-                template: "<component-3></component-3>"
+            .when("/4", {
+                template: "<shapes></shapes>"
             })
-            .when("/component-4", {
-                template: "<component-4></component-4>"
-            })
-            .when("/component-5", {
-                template: "<component-5></component-5>"
+            .when("/5", {
+                template: "<elements></elements>"
             })
             .when("/results", {
                 template: "<results></results>"

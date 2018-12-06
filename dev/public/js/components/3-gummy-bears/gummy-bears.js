@@ -1,7 +1,7 @@
 "use strict";
 
 const gummyBears = {
-    templateUrl: "js/components/2-gummy-bears/gummy-bears.html",
+    templateUrl: "js/components/3-gummy-bears/gummy-bears.html",
     controller: ["ProjectService", "$location","$timeout", "$scope", function(ProjectService, $location, $timeout, $scope){
         const vm = this;
         vm.btnDisplay = false;
@@ -9,7 +9,7 @@ const gummyBears = {
             vm.btnDisplay = true;
         };
         vm.bounceOut = () => {
-            $location.path("/component-3");
+            $location.path("/4");
         };
 
         $timeout (function() {

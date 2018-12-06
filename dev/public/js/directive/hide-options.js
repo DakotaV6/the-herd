@@ -6,15 +6,16 @@ function hideOptions() {
         link: function($scope, $element, $attrs) {
             $element
             .on("click", (event) => {
-                const options = event.target.attributes[3].value;
-                const icon = event.target.parentElement.children;
+                console.log($element);
+                const selectedOption = event.target.src;
+                const allOptions = event.target.parentElement.children;
                 let i;
-                for (i = 0; i < icon.length; i++) {
-                    if (icon[i].attributes[3].value === options) {
-                        icon[i].hidden = false;
-                        icon[i].addClass = "continuous-jello";
+                for (i = 0; i < allOptions.length; i++) {
+                    if (allOptions[i].src === selectedOption) {
+                        allOptions[i].hidden = false;
+                        allOptions[i].addClass = "continuous-jello";
                     } else {
-                    icon[i].hidden = true;
+                    allOptions[i].hidden = true;
                     }
                 }
             });

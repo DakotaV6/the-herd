@@ -6,7 +6,6 @@ function hideOptions() {
         link: function($scope, $element, $attrs) {
             $element
             .on("click", (event) => {
-                console.log($element);
                 const selectedOption = event.target.src;
                 const allOptions = event.target.parentElement.children;
                 let i;

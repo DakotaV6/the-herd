@@ -1,7 +1,7 @@
 "use strict";
 
-const component5 = {
-    templateUrl: "js/components/5-component-5/component-5.html",
+const elements = {
+    templateUrl: "js/components/5-elements/elements.html",
     controller: ["$location", function($location) {
         const vm = this;
         vm.nextUp = () => {
@@ -12,4 +12,4 @@ const component5 = {
 
 angular 
     .module("App")
-    .component("component5", component5);
+    .component("elements", elements);

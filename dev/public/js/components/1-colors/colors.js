@@ -1,7 +1,7 @@
 "use strict";
 
 const colors = {
-    templateUrl: "js/components/2-component-2/component-2.html",
+    templateUrl: "js/components/1-colors/colors.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
         const vm = this;
         vm.btnDisplay = false;
@@ -27,7 +27,7 @@ const colors = {
             ProjectService.playlistList(); 
         };
         vm.bounceOut = () => {
-            $location.path("/component-2");
+            $location.path("/2");
         };
     }]
 };

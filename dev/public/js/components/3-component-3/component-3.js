@@ -8,18 +8,23 @@ const component3 = {
         vm.showBtn = () => {
             vm.btnDisplay = true;
         };
+
+
+        $timeout (function() {
+            vm.addScore1 = () => {
+                ProjectService.addScore1();
+            };
+            vm.addScore2 = () => {
+                ProjectService.addScore2();
+            };
+            vm.addScore3 = () => {
+                ProjectService.addScore3();
+            };
+        }, 1600);
         vm.nextUp = () => {
             $location.path("/component-4");
         };
-        vm.addScore1 = () => {
-            ProjectService.addScore1();
-        };
-        vm.addScore2 = () => {
-            ProjectService.addScore2();
-        };
-        vm.addScore3 = () => {
-            ProjectService.addScore3();
-        };
+
     }]
 };
 angular 

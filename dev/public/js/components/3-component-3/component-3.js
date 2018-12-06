@@ -21,7 +21,10 @@ const component3 = {
                 ProjectService.addScore3();
             };
         }, 1600);
-        
+        vm.nextUp = () => {
+            $location.path("/component-4");
+        };
+
     }]
 };
 angular 

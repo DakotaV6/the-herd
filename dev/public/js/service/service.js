@@ -38,7 +38,6 @@ function ProjectService($http, $location, $timeout) {
         for (let playlist of self.playlists) {
             self.playlistLinks.push("https://open.spotify.com/embed/user/spotify/playlist/" + playlist.id);
         }
-        console.log(self.playlistLinks);
     };
     self.getOne = () => {
         if (self.scoreBoard > self.playlistLinks.length) {

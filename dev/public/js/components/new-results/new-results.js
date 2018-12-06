@@ -1,14 +1,14 @@
 "use strict";
 
-const results = {
-    templateUrl: "js/components/results/results.html",
+const newResults = {
+    templateUrl: "js/components/new-results/new-results.html",
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this; 
         vm.getMyPlaylist = () => {
-            vm.link = ProjectService.getOne();
+            vm.link = ProjectService.getAnother();
         };
         vm.nextUp = () => {
-            $location.path("/new-playlist");
+            $location.path("/extra-playlist");
         };
         vm.getMyPlaylist();
     }]
@@ -17,4 +17,4 @@ const results = {
 
 angular
     .module("App")
-    .component("results", results);
+    .component("newResults", newResults);

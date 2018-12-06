@@ -11,7 +11,7 @@ function colorPicker($timeout) {
                         document.querySelector("body").classList = event.target.classList[1];
                 })
                 
-                })}, 2500);
+            })}, 1500);
             
         }
     };

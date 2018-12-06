@@ -6,14 +6,12 @@ function jiggle() {
         link: function($scope, $element, $attrs) {
             $element
             .on("mouseenter", (event) => {
-                event.target.classList += " animated jello";
+                event.target.classList += " animated jello"
             })
             .on("mouseleave", (event) => {
-                event.target.removeClass = "animated jello";
+                event.target.classList= "gummy-bear"
             });
-            // .on("click", (event) => {
-            //     event.target.classList += "continuous-jello";
-            // });
+
         }
     };
 }

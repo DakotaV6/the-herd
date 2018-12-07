@@ -298,17 +298,30 @@ body {
     border-radius: 5em;
     opacity: .7;
 }
-
-#poly-container {
-    width: 140px; 
-    height: 140px; 
-    view-box: 0 0 128 128;
-
+#polygonOption, #bloblOption {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+    /* width: 140px;
+    height: 140px; */
 }
-
-#poly-shape {
-    width: 135;
-    height: 135;
+#star-polygon {
+    width: 140px;
+    height: 140px;
+    /* fill: rgb(198, 14, 142); */
+}
+.star {
+    fill: rgb(167, 234, 229);
+    margin: auto;
+}
+#diamond-triangle {
+    height: 140px;
+    width: 140px;
+}
+.diamond {
+    fill: rgb(163, 125, 183);
+    margin: auto;
 }
 /******************/
 /*****RESULTS******/

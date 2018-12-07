@@ -4,15 +4,15 @@ const shapes = {
     templateUrl: "js/components/4-shapes/shapes.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function (ProjectService, $location, $timeout, $scope) {
         const vm = this;
-        vm.btnDisplay = false;
         $timeout(function () {
-            vm.showBtn = () => {
-                vm.btnDisplay = true;
+            vm.nextUp = () => {
+                $timeout(function() {
+                    $scope.$apply(function() {
+                        $location.path("/results");
+                    });
+                }, 900);
             };
         }, 1600);
-        vm.nextUp = () => {
-            $location.path("/results");
-        };
         $timeout(function () {
             vm.toSquare = () => {
                 anime({

@@ -4,10 +4,19 @@ const animals = {
     templateUrl: "js/components/2-animals/animals.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService, $location, $timeout, $scope) {
         const vm = this;
-        vm.btnDisplay = false;
         $timeout(function() {
-            vm.showBtn = () => {
-                vm.btnDisplay = true;
+            vm.danceAnimal = () => {
+                anime({
+                    targets: event.target,
+                    
+                    });
+            };
+            vm.nextUp = () => {
+                $timeout(function() {
+                    $scope.$apply(function() {
+                        $location.path("/3");
+                    });
+                }, 800);
             };
         }, 1600);
 
@@ -22,9 +31,7 @@ const animals = {
                 ProjectService.addScore3();
             };
         }, 1600);
-        vm.nextUp = () => {
-            $location.path("/3");
-        };
+        
 
     }]
 };

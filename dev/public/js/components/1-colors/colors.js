@@ -4,11 +4,27 @@ const colors = {
     templateUrl: "js/components/1-colors/colors.html",
     controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
         const vm = this;
-        vm.btnDisplay = false;
         $timeout(function() {
-            vm.showBtn = () => {
-                vm.btnDisplay = true;
+            vm.rippleEffect = () => {
+                anime({
+                targets: event.target,
+                opacity: {
+                    value: [1, 0],
+                    duration: 2000
+                  },
+                  scale: {
+                    value: 10,
+                    duration: 3000
+                  },
+                });
             };
+            vm.nextUp = () => {
+                $timeout(function() {
+                    $scope.$apply(function() {
+                        $location.path("/2");
+                    });
+                }, 700);
+            }
         }, 1600);
 
         $timeout (function() {
@@ -25,9 +41,8 @@ const colors = {
         vm.getLinks = () => {
             ProjectService.playlistList(); 
         };
-        vm.bounceOut = () => {
-            $location.path("/2");
-        };
+        
+        
     }]
 };
 

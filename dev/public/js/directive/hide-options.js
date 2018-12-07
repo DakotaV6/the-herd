@@ -21,7 +21,7 @@ function hideOptions($timeout) {
                         }
                 })
             
-            })}, 1500);
+            })}, 1600);
         }
     };
 }

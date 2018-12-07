@@ -1,12 +1,11 @@
 <section class="component-container">
     <p class="game-title">Pick an animal.</p>
-    <i ng-show= "$ctrl.btnDisplay" class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
 
-        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore2();" hide-animal class="animals" src="images/dog.svg" >
-        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore3();" hide-animal class="animals" src="images/fox.svg" >
-        <img ng-click= "$ctrl.showBtn(); $ctrl.addScore1();" hide-animal class="animals" src="images/capybara.svg" >
-        <img ng-click= "$ctrl.showBtn();" hide-animal class="animals" src="images/giraffe.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore2();" hide-animal class="animals" src="images/dog.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore3();" hide-animal class="animals" src="images/fox.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore1();" hide-animal class="animals" src="images/capybara.svg" >
+        <img ng-click= "$ctrl.nextUp();" hide-animal class="animals" src="images/giraffe.svg" >
 
         <!-- DOG SVG -->
         <!-- <section class="dog-box" hide-animal></section> -->

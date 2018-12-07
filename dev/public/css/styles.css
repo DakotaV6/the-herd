@@ -318,10 +318,14 @@ body {
     fill: rgb(167, 234, 229);
     margin: auto;
 }
-#diamond-triangle {
+#diamond-starfleet {
     height: 140px;
     width: 140px;
 }
+#diamondOption {
+    cursor: pointer;
+}
+
 .diamond {
     fill: rgb(163, 125, 183);
     margin: auto;
@@ -332,6 +336,10 @@ body {
 .new-playlist {
     cursor: pointer;
     font-size: 18px;
+}
+.new-playlist:hover {
+    color: #1DB954;
+    font-size: 20px;
 }
 .add-fave {
     cursor: pointer;

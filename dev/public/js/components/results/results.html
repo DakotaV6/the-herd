@@ -1,5 +1,7 @@
 <section class="component-container">
-    <p class="game-title">Here's a playlist.</p>
-    <iframe ng-src="{{$ctrl.link}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <p class="game-title">{{ $ctrl.playlist.name }}</p>
+        <p class="add-fave" ng-click="$ctrl.saveToFavorites();">favorite <i class="fas fa-heart"></i></p>
+    </div>
+    <iframe ng-src="{{$ctrl.playlist.link}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <p class="new-playlist" ng-click="$ctrl.nextUp();">Get a new playlist.</p>
 </section>

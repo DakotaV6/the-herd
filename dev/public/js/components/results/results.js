@@ -5,12 +5,16 @@ const results = {
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this; 
         vm.getMyPlaylist = () => {
-            vm.link = ProjectService.getOne();
+            vm.playlist = ProjectService.getOne();
         };
         vm.nextUp = () => {
             $location.path("/new-playlist");
         };
         vm.getMyPlaylist();
+        
+        vm.saveToFavorites = () => {
+            ProjectService.saveToFavorites(vm.playlist); 
+        }; 
     }]
 }; 
 

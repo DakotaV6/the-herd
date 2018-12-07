@@ -21,8 +21,8 @@ body {
 }
 
 .view-animation.ng-enter {
-    animation: bounceInRight 1.5s;
-    -webkit-animation: bounceInRight 1.5s;
+    animation: zoomIn 1.5s;
+    -webkit-animation: zoomIn 1.5s;
 }
 
 .view-animation.ng-leave {
@@ -297,6 +297,18 @@ body {
     background-color: yellow;
     border-radius: 5em;
     opacity: .7;
+}
+
+#poly-container {
+    width: 140px; 
+    height: 140px; 
+    view-box: 0 0 128 128;
+
+}
+
+#poly-shape {
+    width: 135;
+    height: 135;
 }
 /******************/
 /*****RESULTS******/

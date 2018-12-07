@@ -21,8 +21,8 @@ body {
 }
 
 .view-animation.ng-enter {
-    animation: bounceInRight 1.5s;
-    -webkit-animation: bounceInRight 1.5s;
+    animation: zoomIn 1.5s;
+    -webkit-animation: zoomIn 1.5s;
 }
 
 .view-animation.ng-leave {

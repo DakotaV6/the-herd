@@ -18,12 +18,12 @@ const shapes = {
         };
         vm.toCircle = () => {
             anime({
-            targets: '#squareOption',
-            opacity: .7,
-            backgroundColor: '#00F',
-            borderRadius: ['0em', '5em'],
-            easing: 'easeInOutQuad'
-          });
+                targets: '#squareOption',
+                opacity: .7,
+                backgroundColor: '#00F',
+                borderRadius: ['0em', '5em'],
+                easing: 'easeInOutQuad'
+            });
         };
         vm.toPolygon = () => {
             anime({

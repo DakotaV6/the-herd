@@ -9,7 +9,6 @@ const colors = {
             vm.showBtn = () => {
                 vm.btnDisplay = true;
             };
-            
         }, 1600);
 
         $timeout (function() {

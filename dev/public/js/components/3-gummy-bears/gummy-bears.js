@@ -5,13 +5,14 @@ const gummyBears = {
     controller: ["ProjectService", "$location","$timeout", "$scope", function(ProjectService, $location, $timeout, $scope){
         const vm = this;
         vm.btnDisplay = false;
-        vm.showBtn = () => {
-            vm.btnDisplay = true;
-        };
+        $timeout(function() {
+            vm.showBtn = () => {
+                vm.btnDisplay = true;
+            };
+        }, 1600);
         vm.bounceOut = () => {
             $location.path("/4");
         };
-
         $timeout (function() {
             vm.addScore1 = () => {
                 ProjectService.addScore1();

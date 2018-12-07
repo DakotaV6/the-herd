@@ -2,9 +2,9 @@
     <p class="game-title">Pick a shape</p>
     <div class="game-container">
         <div id="squareOption" ng-click="$ctrl.toCircle(); $ctrl.nextUp();"></div>
-        <div ng-click="$ctrl.toTriangle(); $ctrl.addScore3(); $ctrl.nextUp();"id="diamondOption" > 
-                <svg id="diamond-triangle" viewBox="0 0 352 337">
-                <polygon class="diamond" points="291.03 170 179.52 332 68.02 170 179.52 8 291.03 170"></polygon>
+        <div ng-click="$ctrl.toStarFleet(); $ctrl.addScore3(); $ctrl.nextUp();" id="diamondOption" > 
+                <svg id="diamond-starfleet" viewBox="0 0 352 337">
+                <path class="diamond" d="M291.03 170 179.52 332 68.02 170 179.52 8 291.03 170Z">
                 </svg> 
             </div>
         <div ng-click="$ctrl.toPolygon(); $ctrl.addScore1(); $ctrl.nextUp();" id="polygonOption" > 

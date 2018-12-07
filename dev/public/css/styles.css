@@ -21,8 +21,8 @@ body {
 }
 
 .view-animation.ng-enter {
-    animation: bounceInRight 1.5s;
-    -webkit-animation: bounceInRight 1.5s;
+    animation: zoomIn 1.5s;
+    -webkit-animation: zoomIn 1.5s;
 }
 
 .view-animation.ng-leave {
@@ -297,6 +297,31 @@ body {
     background-color: yellow;
     border-radius: 5em;
     opacity: .7;
+}
+#polygonOption, #bloblOption {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+    /* width: 140px;
+    height: 140px; */
+}
+#star-polygon {
+    width: 140px;
+    height: 140px;
+    /* fill: rgb(198, 14, 142); */
+}
+.star {
+    fill: rgb(167, 234, 229);
+    margin: auto;
+}
+#diamond-triangle {
+    height: 140px;
+    width: 140px;
+}
+.diamond {
+    fill: rgb(163, 125, 183);
+    margin: auto;
 }
 /******************/
 /*****RESULTS******/

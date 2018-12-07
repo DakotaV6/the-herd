@@ -29,6 +29,9 @@ body {
     animation: bounceOutLeft 1s;
     -webkit-animation: bounceOutLeft 1s;
 }
+.clear {
+    clear: both;
+}
 /********************/
 /*******ABOUT********/
 /********************/
@@ -329,4 +332,12 @@ body {
 .new-playlist {
     cursor: pointer;
     font-size: 18px;
+}
+.add-fave {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 0;
 }

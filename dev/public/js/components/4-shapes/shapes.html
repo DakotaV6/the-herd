@@ -2,7 +2,16 @@
     <p class="game-title">Pick a shape</p>
     <div class="game-container">
         <div id="squareOption" ng-click="$ctrl.toCircle();"></div>
-        <div id="circleOption" ng-click="$ctrl.toSquare();"></div>
-    </div>
+        <div ng-click="$ctrl.toTriangle(); $ctrl.addScore3();" id="diamondOption" > 
+                <svg id="diamond-triangle" viewBox="0 0 352 337">
+                <polygon class="diamond" points="291.03 170 179.52 332 68.02 170 179.52 8 291.03 170"></polygon>
+                </svg> 
+            </div>
+        <div ng-click="$ctrl.toPolygon(); $ctrl.addScore1();" id="polygonOption" > 
+            <svg id="star-polygon" viewBox="0 0 352 337">
+            <polygon class="star" points="175.5 0.06 230 110.49 351.87 128.19 263.68 214.15 284.5 335.53 175.5 278.22 66.5 335.53 87.32 214.15 -0.87 128.19 121 110.49 175.5 0.06"></polygon>
+            </svg> 
+        </div>
+        <div id="circleOption" ng-click="$ctrl.toSquare(); $ctrl.addScore2();"></div>
     <i class="next-btn far fa-arrow-alt-circle-right" ng-click="$ctrl.nextUp();"></i>
 </section>

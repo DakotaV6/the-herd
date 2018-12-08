@@ -26,8 +26,8 @@ body {
 }
 
 .view-animation.ng-leave {
-    animation: bounceOutLeft 1s;
-    -webkit-animation: bounceOutLeft 1s;
+    animation: bounceOutRight 1s;
+    -webkit-animation: bounceOutRight 1s;
 }
 .clear {
     clear: both;
@@ -49,36 +49,25 @@ body {
 }
 #join-us {
     cursor: pointer;
-    font-size: 20px;
-    background: none;
-    /* color: rgba(216, 216, 216, 0.5); */
-    border: 2px solid rgba(216, 216, 216, 0.5);
-    border-radius: 6px;
-    padding: 10px 15px;
+    font-size: 60px;
     animation: rainbowButton 10s;
     -webkit-animation: rainbowButton 20s infinite;
-    /* transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;  */
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
     animation-direction: alternate;
     -webkit-animation-direction: alternate;
 }
-
-#join-us:hover{
-    cursor: pointer;
-}
 @keyframes rainbowButton {
-    0% {color: cyan; border: 2px solid cyan;}
-    33% {color: rgb(88, 237, 203); border: 2px solid rgb(88, 237, 203);}
-    66% {color: lightgreen; border: 2px solid lightgreen;}
-    100% {color: greenyellow; border: 2px solid greenyellow;} 
+    0% {color: cyan}
+    33% {color: rgb(88, 237, 203)}
+    66% {color: lightgreen}
+    100% {color: greenyellow} 
 } 
 @-webkit-keyframes rainbowButton {
-    0% {color: cyan; border: 2px solid cyan;}
-    33% {color: rgb(88, 237, 203); border: 2px solid rgb(88, 237, 203);}
-    66% {color: lightgreen; border: 2px solid lightgreen;}
-    100% {color: greenyellow; border: 2px solid greenyellow;} 
+    0% {color: cyan}
+    33% {color: rgb(88, 237, 203)}
+    66% {color: lightgreen}
+    100% {color: greenyellow} 
 } 
 
 /**********************/
@@ -96,6 +85,7 @@ body {
     cursor: pointer;
     margin: 0;
     width: 40vw;
+    max-width: 215px;
 }
 .little-a {
     font-size: .8em;
@@ -124,20 +114,6 @@ body {
 
 .game-title {
     text-align: center;
-}
-.next-btn {
-    cursor: pointer;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    color: white;
-    opacity: .7;
-    font-size: 45px;
-}
-
-.next-btn.ng-hide-remove {
-    -webkit-animation: rotateInDownLeft 2s;
-    animation: rotateInDownLeft 2s;
 }
 /**********************/
 /*****GUMMY BEARS******/
@@ -359,5 +335,34 @@ body {
     padding: 2px 10px;
     border: 2px solid white;
     border-radius: 20px;
-    margin-top: 0;
+    margin-bottom: 0;
+}
+iframe {
+    width: 300px;
+    height: 380px;
+}
+/*************************/
+/******MEDIA QUERIES******/
+/*************************/
+@media only screen and (min-width: 768px) {
+    .game-title {
+        font-size: 30px;
+    }
+    .side-bar {
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        width: 30vw;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .component-container {
+        position: absolute;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+    }
+    iframe {
+        height: 500px;
+    }
 }

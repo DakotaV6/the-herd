@@ -25,6 +25,9 @@ const colors = {
                     });
                 }, 700);
             }
+            vm.getLinks = () => {
+                ProjectService.playlistList(); 
+            };
         }, 1600);
 
         $timeout (function() {
@@ -38,9 +41,6 @@ const colors = {
                 ProjectService.addScore3();
             };
         }, 1600);
-        vm.getLinks = () => {
-            ProjectService.playlistList(); 
-        };
         
         
     }]

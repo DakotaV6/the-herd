@@ -16,7 +16,7 @@ const animals = {
                     $scope.$apply(function() {
                         $location.path("/3");
                     });
-                }, 800);
+                }, 1600);
             };
         }, 1600);
 

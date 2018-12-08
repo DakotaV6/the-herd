@@ -18,6 +18,7 @@ function hideAnimal($timeout) {
                                     icon[i].hidden = true;
                                 }
                             }
+                            event.target.classList.add("animal-anim");
                         });
                 })
             }, 1600);

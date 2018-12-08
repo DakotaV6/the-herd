@@ -10,7 +10,7 @@ const gummyBears = {
                     $scope.$apply(function() {
                         $location.path("/4");
                     });
-                }, 800);
+                }, 1600);
             };
         }, 1600);
         $timeout (function() {

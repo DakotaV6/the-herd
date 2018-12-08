@@ -149,6 +149,8 @@ body {
     margin: 0 30px;
 }
 
+
+
 .cont-jello{
     -webkit-animation: 
     jello
@@ -157,6 +159,16 @@ body {
     animation: jello
     1.5s
     infinite; 
+}
+
+.animal-anim {
+    -webkit-animation: 
+    tada
+    1.5s
+    infinite;
+    animation: tada
+    1.5s
+    infinite;     
 }
 /**********************/
 /*****COLOR SHAPES*****/

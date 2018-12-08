@@ -11,6 +11,10 @@ const newResults = {
             $location.path("/extra-playlist");
         };
         vm.getMyPlaylist();
+
+        vm.saveToFavorites = () => {
+            ProjectService.saveToFavorites(vm.playlist); 
+        }
     }]
 }; 
 

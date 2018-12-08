@@ -18,6 +18,7 @@ function hideOptions($timeout) {
                             allOptions[i].hidden = true;
                             }
                         }
+                        event.target.classList.add("cont-jello");
                 })
             
             })}, 1600);

@@ -1,5 +1,5 @@
 <section class="component-container">
-    <p class="game-title">{{$ctrl.playlist.name}}</p>
+    <p class="game-title">{{ $ctrl.playlist.name }}</p>
     <iframe ng-src="{{$ctrl.playlist.link}}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <p class="add-fave" ng-click="$ctrl.saveToFavorites();">favorite <i class="fas fa-heart"></i></p>
     <p class="new-playlist" ng-click="$ctrl.nextUp();">Get a new playlist.</p>

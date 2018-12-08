@@ -10,7 +10,6 @@ function colorPicker($timeout) {
                     .on("click", (event) => {
                         document.querySelector("body").classList = event.target.classList[1];
                 })
-                
             })}, 1600);
             
         }

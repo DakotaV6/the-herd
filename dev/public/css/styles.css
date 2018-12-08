@@ -130,10 +130,10 @@ body {
 .cont-jello{
     -webkit-animation: 
     jello
-    1.5s
+    1s
     infinite;
     animation: jello
-    1.5s
+    1s
     infinite; 
 }
 

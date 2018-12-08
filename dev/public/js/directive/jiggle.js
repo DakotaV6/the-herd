@@ -10,6 +10,9 @@ function jiggle() {
             })
             .on("mouseleave", (event) => {
                 event.target.classList.remove("animated","jello");
+            })
+            .on("click", (event) => {
+                event.target.classList.add("cont-jello");
             });
 
         }

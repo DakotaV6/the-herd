@@ -14,7 +14,7 @@ const colors = {
                   },
                   scale: {
                     value: 10,
-                    duration: 3000
+                    duration: 2000
                   },
                 });
             };

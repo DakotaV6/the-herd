@@ -5,7 +5,7 @@ const extraResults = {
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this; 
         vm.getMyPlaylist = () => {
-            vm.link = ProjectService.getAnother();
+            vm.playlist = ProjectService.getAnother();
         };
         vm.nextUp = () => {
             $location.path("/new-playlist");

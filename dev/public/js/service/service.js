@@ -47,7 +47,7 @@ function ProjectService($http, $location, $timeout) {
         if (self.scoreBoard > self.playlistLinks.length) {
             return {
                 link: "https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb",
-                name: "You've been Rickrolled"
+                name: "Your score was insane!"
             };
         } else {
             return self.playlistLinks[self.scoreBoard];
@@ -57,7 +57,7 @@ function ProjectService($http, $location, $timeout) {
         if (self.playlistLinks.length === 1) {
             return {
                 link: "https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb",
-                name: "You've been Rickrolled"
+                name: "No playlists left."
             };
         } else {
             self.playlistLinks.splice(self.scoreBoard, 1);

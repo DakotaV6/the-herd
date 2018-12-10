@@ -39,7 +39,9 @@ function ProjectService($http, $location, $timeout) {
         for (let playlist of self.playlists) {
             self.playlistLinks.push({
                 link: "https://open.spotify.com/embed/user/spotify/playlist/" + playlist.id,
-                name: playlist.name
+                name: playlist.name,
+                image: playlist.images[0].url
+
             });
         }
     };
@@ -52,6 +54,12 @@ function ProjectService($http, $location, $timeout) {
         } else {
             return self.playlistLinks[self.scoreBoard];
         }
+    };
+    self.getFavorite = (index) => {
+        self.selectPlaylist = self.favePlaylists[index];
+    };
+    self.setFavorite = () => {
+        return self.selectPlaylist;
     };
     self.getAnother = () => {
         if (self.playlistLinks.length === 1) {

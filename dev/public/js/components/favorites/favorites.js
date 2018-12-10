@@ -8,7 +8,8 @@ const favorites = {
         vm.deletePlaylist = ($index) => {
             ProjectService.deleteFavorite($index, 1);
         };
-        vm.viewFavorite = () => {
+        vm.viewFavorite = (index) => {
+            ProjectService.getFavorite(index);
             $location.path("/fav-results");
         };
     }]

@@ -116,7 +116,6 @@ body {
     max-width: 359px;
     border-radius: 8px;
 }
-
 .game-title {
     text-align: center;
 }
@@ -129,9 +128,6 @@ body {
     max-height: 144px;
     margin: 0 30px;
 }
-
-
-
 .cont-jello{
     -webkit-animation: 
     jello
@@ -140,16 +136,6 @@ body {
     animation: jello
     1s
     infinite; 
-}
-
-.animal-anim {
-    -webkit-animation: 
-    tada
-    1.5s
-    infinite;
-    animation: tada
-    1.5s
-    infinite;     
 }
 /**********************/
 /*****COLOR SHAPES*****/
@@ -178,7 +164,15 @@ body {
 /*******************/
 /******ANIMALS******/
 /*******************/
-
+.animal-anim {
+    -webkit-animation: 
+    tada
+    1.5s
+    infinite;
+    animation: tada
+    1.5s
+    infinite;     
+}
 /* .dog-box {
     position: absolute;
     background-color: rgba(255, 255, 255, .5);

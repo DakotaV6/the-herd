@@ -35,6 +35,9 @@ angular
             .when("/favorites", {
                 template: "<favorites></favorites>"
             })
+            .when("/fav-results", {
+                template: "<fav-results></fav-results>"
+            })
             .when("/extra-playlist", {
                 template: "<extra-results></extra-results>"
             })

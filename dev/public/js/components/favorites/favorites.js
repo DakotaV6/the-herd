@@ -5,8 +5,11 @@ const favorites = {
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this;
         vm.favePlaylists = ProjectService.favePlaylists;
-        vm.deletePlaylist = (playlist, $index) => {
-            ProjectService.deletePlaylist(playlist, $index);
+        vm.deletePlaylist = ($index) => {
+            ProjectService.deleteFavorite($index, 1);
+        };
+        vm.viewFavorite = () => {
+            $location.path("/fav-results");
         };
     }]
 };

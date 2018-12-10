@@ -1,9 +1,10 @@
 <section class= "component-container">
+        <p class= "game-title">Your Favorite Playlists</p>
         <section class = "fav-container">
-            <ul ng-repeat= "playlist in $ctrl.favePlaylists">
-                <img ng-src = "{{playlist.images[0].url}}">
-                <li>{{playlist.name}}</li>
-                <i ng-click= "$ctrl.deleteFavorite(playlist, $index);" class="material-icons">close</i>
+            <ul class= "fav-list" ng-repeat= "playlist in $ctrl.favePlaylists">
+                <!-- <img ng-src = "{{playlist.images[0].url}}"> -->
+                <li ng-click= "$ctrl.viewFavorite();" class= "favs">{{playlist.name}}</li>
+                <i ng-click= "$ctrl.deletePlaylist( $index, 1);" class="material-icons">close</i>
 
             </ul>
         </section>

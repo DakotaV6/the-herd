@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -44,6 +45,7 @@ body {
     width: 320px;
 }
 .tag-line {
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
@@ -79,7 +81,7 @@ body {
     align-items: center;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(216, 216, 216, 0.5);
+    background-color: rgba(216, 216, 216, 0.2);
 }
 .logo {
     cursor: pointer;
@@ -327,7 +329,7 @@ body {
 }
 .new-playlist:hover {
     color: #1DB954;
-    font-size: 20px;
+    font-weight: 700;
 }
 .add-fave {
     cursor: pointer;

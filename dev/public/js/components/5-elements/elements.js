@@ -5,7 +5,7 @@ const elements = {
     controller: ["$location", function($location) {
         const vm = this;
         vm.nextUp = () => {
-            $location.path("/results");
+            $location.path("/6");
         };
     }]
 };

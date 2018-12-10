@@ -11,13 +11,17 @@ const results = {
             $location.path("/new-playlist");
         };
         vm.getMyPlaylist();
-        
+
         vm.saveToFavorites = () => {
             ProjectService.saveToFavorites(vm.playlist); 
         }; 
+
+        vm.favePlaylists = ProjectService.favePlaylists; 
+
         vm.goToFavorites = () => {
             $location.path("/favorites");
         };
+
     }]
 }; 
 

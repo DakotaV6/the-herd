@@ -15,6 +15,9 @@ const extraResults = {
         vm.saveToFavorites = () => {
             ProjectService.saveToFavorites(vm.playlist); 
         }
+
+        vm.favePlaylists = ProjectService.favePlaylists; 
+
         vm.goToFavorites = () => {
             $location.path("/favorites");
         };

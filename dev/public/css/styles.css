@@ -348,13 +348,6 @@ body {
     right: 0;
     top: 0;
     margin-top: 10px;
-
-   
-}
-
-.add-fave:hover {
-    color: red;
-    border: 2px solid red;
 }
 iframe {
     width: 300px;

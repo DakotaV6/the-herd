@@ -23,6 +23,9 @@ angular
             .when("/5", {
                 template: "<elements></elements>"
             })
+            .when("/6", {
+                template: "<orbs></orbs>"
+            })
             .when("/results", {
                 template: "<results></results>"
             })

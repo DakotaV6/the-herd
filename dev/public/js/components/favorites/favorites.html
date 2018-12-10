@@ -3,7 +3,7 @@
             <ul ng-repeat= "playlist in $ctrl.favePlaylists">
                 <img ng-src = "{{playlist.images[0].url}}">
                 <li>{{playlist.name}}</li>
-                <i ng-click= "$ctrl.deleteFavorite(playlist, $index);class="material-icons">close</i>
+                <i ng-click= "$ctrl.deleteFavorite(playlist, $index);" class="material-icons">close</i>
 
             </ul>
         </section>

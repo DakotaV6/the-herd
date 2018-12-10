@@ -90,6 +90,9 @@ body {
 .little-a {
     font-size: .8em;
 }
+.description {
+    display: none;
+}
 /************************/
 /*******COMPONENTS*******/
 /************************/
@@ -337,6 +340,21 @@ body {
     border-radius: 20px;
     margin-bottom: 0;
 }
+
+.see-favorites {
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+
+   
+}
+
+.add-fave:hover {
+    color: red;
+    border: 2px solid red;
+}
 iframe {
     width: 300px;
     height: 380px;
@@ -355,6 +373,16 @@ iframe {
         width: 30vw;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .description {
+        display: block;
+        padding: 15px;
+        padding-top: 0px;
+        font-size: 23px;
+        margin-top: 0px;
+        font-weight: lighter;
+
+        /* font-size: 20px; */
     }
     .component-container {
         position: absolute;

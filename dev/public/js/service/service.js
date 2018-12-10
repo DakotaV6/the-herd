@@ -69,6 +69,9 @@ function ProjectService($http, $location, $timeout) {
         console.log("Added to favorites");
         self.favePlaylists.push(playlist);
     };
+    self.deleteFavorite = (index) => {
+        self.favePlaylists.splice(index, 1);
+    };
 
 }
 

@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -44,6 +45,7 @@ body {
     width: 320px;
 }
 .tag-line {
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
@@ -79,7 +81,7 @@ body {
     align-items: center;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(216, 216, 216, 0.5);
+    background-color: rgba(216, 216, 216, 0.2);
 }
 .logo {
     cursor: pointer;
@@ -89,6 +91,9 @@ body {
 }
 .little-a {
     font-size: .8em;
+}
+.description {
+    display: none;
 }
 /************************/
 /*******COMPONENTS*******/
@@ -360,7 +365,6 @@ body {
 }
 .new-playlist:hover {
     color: #1DB954;
-    font-size: 20px;
 }
 .add-fave {
     cursor: pointer;
@@ -369,6 +373,14 @@ body {
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 0;
+}
+
+.see-favorites {
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
 }
 iframe {
     width: 300px;
@@ -389,6 +401,15 @@ iframe {
         flex-direction: column;
         justify-content: space-around;
     }
+    .description {
+        display: block;
+        padding: 15px;
+        padding-top: 0px;
+        font-size: 23px;
+        margin-top: 0px;
+        font-weight: 400;
+        /* font-size: 20px; */
+    }
     .component-container {
         position: absolute;
         right: 0;
@@ -399,4 +420,3 @@ iframe {
         height: 500px;
     }
 }
-

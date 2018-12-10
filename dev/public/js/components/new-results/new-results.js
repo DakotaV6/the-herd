@@ -15,6 +15,9 @@ const newResults = {
         vm.saveToFavorites = () => {
             ProjectService.saveToFavorites(vm.playlist); 
         }
+        vm.goToFavorites = () => {
+            $location.path("/favorites");
+        };
     }]
 }; 
 

@@ -1,4 +1,5 @@
 <section class="component-container">
+    <button class= "see-favorites" ng-click ="$ctrl.goToFavorites();">See Favorites</button>
     <p class="game-title">{{ $ctrl.playlist.name }}</p>
     <iframe ng-src="{{$ctrl.playlist.link}}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <p heart-color class="add-fave" ng-click="$ctrl.saveToFavorites();">favorite <i class="fas fa-heart"></i></p>

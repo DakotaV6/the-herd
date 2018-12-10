@@ -375,6 +375,7 @@ body {
     right: 0;
     top: 0;
     margin-top: 10px;
+    color: white; 
 }
 
 .favs {
@@ -394,8 +395,8 @@ body {
     height: 50%;
     overflow: scroll;
     border-radius: 20px;
-    background-color: black;
-    color: #1DB954;
+    background-color: rgba(216, 216, 216, 0.2);
+    color: white;
 }
 
 iframe {

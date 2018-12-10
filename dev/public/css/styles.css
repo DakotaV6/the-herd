@@ -329,7 +329,6 @@ body {
 }
 .new-playlist:hover {
     color: #1DB954;
-    font-weight: 700;
 }
 .add-fave {
     cursor: pointer;

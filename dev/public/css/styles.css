@@ -462,9 +462,9 @@ iframe {
     height: 380px;
 }
 
-.del-fave {
+.material-icons {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
 }
 /*************************/
 /******MEDIA QUERIES******/

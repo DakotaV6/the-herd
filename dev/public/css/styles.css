@@ -26,7 +26,6 @@ body {
     -moz-animation: zoomIn 1.5s;
     -o-animation: zoomIn 1.5s;
     animation: zoomIn 1.5s;
-
 }
 
 .view-animation.ng-leave {

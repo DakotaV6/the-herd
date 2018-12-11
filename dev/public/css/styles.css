@@ -38,8 +38,9 @@ body {
 
 
 }
-.clear {
-    clear: both;
+.bold-slant {
+    font-weight: 700;
+    font-style: italic;
 }
 /********************/
 /*******ABOUT********/
@@ -500,12 +501,10 @@ iframe {
     }
     .description {
         display: block;
-        padding: 15px;
-        padding-top: 0px;
-        font-size: 23px;
-        margin-top: 0px;
+        padding: 15px 25px;
+        font-size: 24px;
+        margin: 0px;
         font-weight: 400;
-        /* font-size: 20px; */
     }
     .component-container {
         position: absolute;
@@ -541,5 +540,10 @@ iframe {
     .playlist-cover {
         height: 125px;
         width: 125px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .logo {
+        max-width: 300px;
     }
 }

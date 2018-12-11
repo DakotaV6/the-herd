@@ -2,14 +2,14 @@
     <p class="game-title">Move one upwards.</p>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
 
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore2();" class="animals animal-anim" src="images/dog.svg" >
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore3();" class="animals animal-anim" src="images/fox.svg" >
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore1();" class="animals animal-anim" src="images/capybara.svg" >
-        <img draggable ng-click= "$ctrl.nextUp();" class="animals animal-anim" src="images/giraffe.svg" >
+        <img draggable ng-click="$ctrl.addScore(2);" class="animals animal-anim" src="images/dog.svg" >
+        <img draggable ng-click="$ctrl.addScore(3);" class="animals animal-anim" src="images/fox.svg" >
+        <img draggable ng-click="$ctrl.addScore(1);" class="animals animal-anim" src="images/capybara.svg" >
+        <img draggable ng-click="" class="animals animal-anim" src="images/giraffe.svg" >
 
         <!-- DOG SVG -->
         <!-- <section class="dog-box" hide-animal></section> -->
-        <!-- <svg ng-click= "$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!-- <svg ng-click="$ctrl.showBtn();" class="animals" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <title>dog</title>
             <g class="dog-head">
                 <path class="dog-color-1" d="M255.93,61.88c-90.87,0-173.47,33-173.47,33V276.3c0,66,43.36,95.87,90.86,132H338.53c47.5-36.08,90.87-66,90.87-131.95V94.87S346.79,61.88,255.93,61.88Z" />

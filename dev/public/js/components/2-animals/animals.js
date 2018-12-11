@@ -2,23 +2,17 @@
 
 const animals = {
     templateUrl: "js/components/2-animals/animals.html",
-    controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService, $location, $timeout, $scope) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", function (ProjectService, $location, $timeout, $scope) {
         const vm = this;
-        $timeout (function() {
-            vm.addScore1 = () => {
-                ProjectService.addScore1();
-            };
-            vm.addScore2 = () => {
-                ProjectService.addScore2();
-            };
-            vm.addScore3 = () => {
-                ProjectService.addScore3();
+        $timeout(function () {
+            vm.addScore = (num) => {
+                ProjectService.addScore(num);
             };
         }, 1600);
-        
+
 
     }]
 };
-angular 
+angular
     .module("App")
     .component("animals", animals);

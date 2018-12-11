@@ -6,7 +6,6 @@ function heartColor() {
         link: function($scope, $element, $attrs) {
             $element 
             .on("click", (event) => {
-                console.log($element);
                 document.querySelector(".fa-heart").style.color = "red"; 
             })
         }

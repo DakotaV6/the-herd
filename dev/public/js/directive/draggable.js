@@ -10,20 +10,23 @@ function draggable($timeout) {
             var endY = 0;
             $timeout(function () {
                 $scope.$apply(function () {
+                    console.log($element);
                     $element
                         .on("mousedown", (event) => {
                             event.preventDefault();
-                            event.target.draggable = true;
-                            var startX = event.screenX;
-                            var startY = event.screenY;
+                            event.draggable = true;
+                            startX = event.screenX;
+                            startY = event.screenY;
                             console.log(startX, startY);
                             return startX, startY;
                         })
-                        
+                        .on("mousemove", (event) => {
+                            
+                        })
                         .on("mouseup", (event) => {
-                            event.target.draggable = false;
-                            var endX = event.screenX;
-                            var endY = event.screenY;
+                            event.draggable = false;
+                            endX = event.screenX;
+                            endY = event.screenY;
                             console.log(endX, endY);
                             var distanceTraveled = startY - endY;
                             console.log(distanceTraveled);

@@ -370,17 +370,24 @@ body {
 }
 
 .see-favorites {
-    height: auto;
+    cursor: pointer;
+    height: 10%;
+    width: 6%;
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 10px;
-    background-color: white; 
-    color: black; 
+    margin-top: 5px;
+    margin-right: 15px;
 }
 
 .favs {
     cursor:pointer;
+    font-size: 23px;
+    color: lightgrey;
+}
+
+.favs:hover{
+    border-bottom: 1px solid lightgray;
 }
 
 .fav-list{
@@ -390,6 +397,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 .fav-container {
     width: 75%;
@@ -399,6 +407,11 @@ body {
     background-color: rgba(216, 216, 216, 0.2);
     color: white;
 }
+.playlist-cover {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
 
 iframe {
     width: 300px;
@@ -407,6 +420,7 @@ iframe {
 
 .material-icons {
     cursor: pointer;
+    font-size: 35px;
 }
 /*************************/
 /******MEDIA QUERIES******/

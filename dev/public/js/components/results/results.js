@@ -4,6 +4,7 @@ const results = {
     templateUrl: "js/components/results/results.html",
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this; 
+        vm.isDisabled= false;
         vm.getMyPlaylist = () => {
             vm.playlist = ProjectService.getOne();
         };
@@ -13,7 +14,8 @@ const results = {
         vm.getMyPlaylist();
 
         vm.saveToFavorites = () => {
-            ProjectService.saveToFavorites(vm.playlist); 
+            ProjectService.saveToFavorites(vm.playlist);
+            vm.isDisabled = true;
         }; 
 
         vm.favePlaylists = ProjectService.favePlaylists; 

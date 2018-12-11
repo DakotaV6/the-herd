@@ -24,11 +24,17 @@ body {
 .view-animation.ng-enter {
     animation: zoomIn 1.5s;
     -webkit-animation: zoomIn 1.5s;
+    -moz-animation: zoomIn 1.5s;
+    -o-animation: zoomIn 1.5s;
 }
 
 .view-animation.ng-leave {
     animation: bounceOutRight 1s;
     -webkit-animation: bounceOutRight 1s;
+    -moz-animation: bounceOutRight 1s;
+    -o-animation: bounceOutRight 1s;
+
+
 }
 .clear {
     clear: both;
@@ -66,6 +72,18 @@ body {
     100% {color: greenyellow} 
 } 
 @-webkit-keyframes rainbowButton {
+    0% {color: cyan}
+    33% {color: rgb(88, 237, 203)}
+    66% {color: lightgreen}
+    100% {color: greenyellow} 
+} 
+@-moz-keyframes rainbowButton {
+    0% {color: cyan}
+    33% {color: rgb(88, 237, 203)}
+    66% {color: lightgreen}
+    100% {color: greenyellow} 
+} 
+@-o-keyframes rainbowButton {
     0% {color: cyan}
     33% {color: rgb(88, 237, 203)}
     66% {color: lightgreen}
@@ -135,7 +153,13 @@ body {
     infinite;
     animation: jello
     1s
+    infinite;
+    -moz-animation: jello
+    1s
     infinite; 
+    -o-animation: jello
+    1s
+    infinite;  
 }
 /**********************/
 /*****COLOR SHAPES*****/
@@ -171,7 +195,13 @@ body {
     infinite;
     animation: tada
     1.5s
-    infinite;     
+    infinite; 
+    -moz-animation: tada
+    1.5s
+    infinite;  
+    -o-animation: tada
+    1.5s
+    infinite;      
 }
 /* .dog-box {
     position: absolute;
@@ -225,6 +255,9 @@ body {
 }
 .capybara-eyes {
     animation: blink 3s infinite;
+    -webkit-animation: blink 3s infinite;
+    -moz-animation: blink 3s infinite;
+    -o-animation: blink 3s infinite;
 }
 /* DOG */
 .dog-color-1 {
@@ -356,6 +389,7 @@ body {
 .new-playlist {
     cursor: pointer;
     font-size: 18px;
+    margin-top: 15px;
 }
 .new-playlist:hover {
     color: #1DB954;
@@ -367,6 +401,9 @@ body {
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 0;
+    background-color: transparent;
+    color: white;
+    margin-top: 12px;
 }
 
 .see-favorites {

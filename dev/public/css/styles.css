@@ -396,7 +396,7 @@ body {
 .add-fave {
     cursor: pointer;
     font-size: 18px;
-    padding: 8px 8px;
+    padding: 8px;
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 0;

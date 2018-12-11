@@ -51,14 +51,8 @@ const shapes = {
         }, 1600);
 
         $timeout(function () {
-            vm.addScore1 = () => {
-                ProjectService.addScore1();
-            };
-            vm.addScore2 = () => {
-                ProjectService.addScore2();
-            };
-            vm.addScore3 = () => {
-                ProjectService.addScore3();
+            vm.addScore = (num) => {
+                ProjectService.addScore(num);
             };
         }, 1600);
     }]

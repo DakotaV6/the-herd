@@ -16,23 +16,15 @@ function ProjectService($http, $location, $timeout) {
 
     // SCORE ADDING METHODS
 
-    self.addScore1 = () => {
-        self.scoreBoard += 1;
-        console.log(`score is ${self.scoreBoard}`)
-    };
-    self.addScore2 = () => {
-        self.scoreBoard += 2;
-        console.log(`score is ${self.scoreBoard}`)
-    };
-    self.addScore3 = () => {
-        self.scoreBoard += 3;
-        console.log(`score is ${self.scoreBoard}`)
+    self.addScore = (num) => {
+        self.scoreBoard += num;
+        console.log(`score is ${self.scoreBoard}`);
     };
     self.resetScore = () => {
         self.scoreBoard = 0;
         self.playlists = [];
         self.playlistLinks = [];
-        console.log(`score is ${self.scoreBoard}`)
+        console.log(`score is ${self.scoreBoard}`);
     };
 
     self.playlistList = () => {
@@ -74,7 +66,6 @@ function ProjectService($http, $location, $timeout) {
         }
     };
     self.saveToFavorites = (playlist) => {
-        console.log("Added to favorites");
         self.favePlaylists.push(playlist);
     };
     self.deleteFavorite = (index) => {

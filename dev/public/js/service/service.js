@@ -14,8 +14,6 @@ function ProjectService($http, $location, $timeout) {
         });
     };
 
-    // SCORE ADDING METHODS
-
     self.addScore = (num) => {
         self.scoreBoard += num;
         console.log(`score is ${self.scoreBoard}`);
@@ -24,6 +22,7 @@ function ProjectService($http, $location, $timeout) {
         self.scoreBoard = 0;
         self.playlists = [];
         self.playlistLinks = [];
+        self.favePlaylists = [];
         console.log(`score is ${self.scoreBoard}`);
     };
 

@@ -118,6 +118,7 @@ body {
 }
 .game-title {
     text-align: center;
+    margin-bottom: 50px; 
 }
 /**********************/
 /*****GUMMY BEARS******/
@@ -382,8 +383,10 @@ body {
 
 .favs {
     cursor:pointer;
-    font-size: 23px;
+    font-size: 21px;
     color: lightgrey;
+    margin-left: 22px;
+    margin-right: 20px;
 }
 
 .favs:hover{
@@ -397,20 +400,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 .fav-container {
     width: 75%;
-    height: 50%;
+    height: 65%;
     overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 20px;
-    background-color: rgba(216, 216, 216, 0.2);
-    color: white;
+    background-color: black;
+    color: #1DB954;
 }
 .playlist-cover {
     height: 100px;
     width: 100px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 iframe {
@@ -454,5 +460,24 @@ iframe {
     }
     iframe {
         height: 500px;
+    }
+    .fav-list{
+        list-style-type: none;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    .fav-container {
+        width: 75%;
+        height: 65%;
+        overflow: scroll;
+    
+        overflow-x: hidden;
+        border-radius: 20px;
+        background-color: black;
+        color: #1DB954;
     }
 }

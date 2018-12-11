@@ -30,13 +30,10 @@ body {
 }
 
 .view-animation.ng-leave {
-
     -webkit-animation: bounceOutRight 1s;
     -moz-animation: bounceOutRight 1s;
     -o-animation: bounceOutRight 1s;
     animation: bounceOutRight 1s;
-
-
 }
 .bold-slant {
     font-weight: 700;
@@ -73,7 +70,6 @@ body {
     animation: rainbowButton 20s infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-
 }
 @keyframes rainbowButton {
     0% {color: cyan}
@@ -181,7 +177,6 @@ body {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    /* box-shadow: 0px 0px 20px white; */
 }
 .blue-gradient {
     background-image: linear-gradient(225deg, rgb(0, 0, 0), rgba(42, 35, 114, 1));
@@ -332,18 +327,12 @@ body {
     border-radius: 5em;
     opacity: .7;
 }
-#polygonOption, #bloblOption {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+#polygonOption {
     cursor: pointer;
-    /* width: 140px;
-    height: 140px; */
 }
 #star-polygon {
     width: 140px;
     height: 140px;
-    /* fill: rgb(198, 14, 142); */
 }
 .star {
     fill: rgb(167, 234, 229);

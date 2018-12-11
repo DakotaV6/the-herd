@@ -4,7 +4,7 @@
             <ul class="fav-list" ng-repeat="playlist in $ctrl.favePlaylists">
                 <img ng-click="$ctrl.viewFavorite($index);" class="playlist-cover" ng-src = "{{playlist.image}}">
                 <li ng-click="$ctrl.viewFavorite($index);" class="favs">{{playlist.name}}</li>
-                <i ng-click="$ctrl.deletePlaylist($index, 1);" class="fas fa-times del-fave"></i>
-            </ul>
+                <i ng-click= "$ctrl.deletePlaylist($index, 1);" class="material-icons">close</i>
+                </ul>
         </section>
 </section>

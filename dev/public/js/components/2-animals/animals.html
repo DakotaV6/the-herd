@@ -1,11 +1,11 @@
-<section class="component-container">
+<section draggable class="component-container">
     <p class="game-title">Move one upwards.</p>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
 
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore2();" hide-animal class="animals" src="images/dog.svg" >
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore3();" hide-animal class="animals" src="images/fox.svg" >
-        <img draggable ng-click= "$ctrl.nextUp(); $ctrl.addScore1();" hide-animal class="animals" src="images/capybara.svg" >
-        <img draggable ng-click= "$ctrl.nextUp();" hide-animal class="animals" src="images/giraffe.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore2();" hide-animal class="animals" src="images/dog.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore3();" hide-animal class="animals" src="images/fox.svg" >
+        <img ng-click= "$ctrl.nextUp(); $ctrl.addScore1();" hide-animal class="animals" src="images/capybara.svg" >
+        <img ng-click= "$ctrl.nextUp();" hide-animal class="animals" src="images/giraffe.svg" >
 
         <!-- DOG SVG -->
         <!-- <section class="dog-box" hide-animal></section> -->

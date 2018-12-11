@@ -47,9 +47,8 @@ function draggable($timeout, $document, $location) {
                                 }
                             }
                             $element.css({
-                                position: "absolute",
-                                left: "32%",
-                                top: "42%",
+                                left: "0%",
+                                top: "0%",
                             });
                             $timeout(function () {
                                 $scope.$apply(function () {
@@ -58,10 +57,11 @@ function draggable($timeout, $document, $location) {
                             }, 1600);
                         } else if (distanceTraveled < 200) {
                             $element.css({
-                                top: startY + "px",
-                                left: startX + "px"
+                                top: "0%",
+                                left: "0%"
                             })
                         }
+                        
                         $document.unbind("mousemove", mousemove);
                         $document.unbind("touchmove", mousemove);
                         $document.unbind("mouseup", mouseup);

@@ -1,5 +1,5 @@
 {
-    "name": "NAME OF YOUR APP",
-    "description": "PROJECT DESCRIPTION",
+    "name": "the-heard",
+    "description": "An app to solve one of life's many problems - finding a Spotify playlist. With our app, you play a fun game and we choose the playlist for you!",
     "image": "heroku/nodejs"
 }

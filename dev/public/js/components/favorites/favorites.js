@@ -5,6 +5,7 @@ const favorites = {
     controller: ["ProjectService", "$location", function(ProjectService, $location) {
         const vm = this;
         vm.userName = ProjectService.userName;
+        console.log(vm.userName);
         vm.favePlaylists = ProjectService.favePlaylists;
         vm.deletePlaylist = ($index) => {
             ProjectService.deleteFavorite($index, 1);

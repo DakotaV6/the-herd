@@ -57,6 +57,7 @@ function turn ($timeout,$document, $location) {
                 };
                 
                 rotate = function(e) {
+                    console.log(window.location);
                     var d, x, y;
                     e.preventDefault();
                     x = e.clientX - center.x;
@@ -74,8 +75,8 @@ function turn ($timeout,$document, $location) {
                         newValue.pop();
                         let finalValue = Math.floor(Number(newValue.join("")));
                         console.log(finalValue);
-                        if (finalValue === 180 || finalValue === -180) {
-                            location.hash = "#/results";
+                        if (finalValue === 178 || finalValue === -178 ) {
+                            window.location.hash = "#!/results"
                         }
                         return this.style.webkitTransform = "rotate(" + (angle + rotation) + "deg)";
                     }
@@ -99,58 +100,3 @@ angular
 
 
 
-// "use strict"
-
-// function turn ($timeout,$document, $location) {
-//     return {
-//         restrict: "A",
-//         link: function($scope, $element, $attrs) {
-//             var offsetTop = $element.prop("offsetTop");
-//             var offsetLeft = $element.prop("offsetLeft")
-//             $timeout(function() {
-//                 $scope.$apply(function(){
-//                     $element
-//                         .on("mousedown", (event)=> {
-//                             event.preventDefault();
-//                             $element.css({cursor: "grabbing"})
-//                             $document.on("mousemove", mousemove);
-//                             $document.on("mouseup", mouseup);
-//                         })
-//                         .on("touchstart", (event)=> {
-//                             event.preventDefault();
-//                             $element.css({cursor: "grabbing"})
-//                             $document.on("touchmove", mousemove);
-//                             $document.on("touchend", mouseup);
-//                         })
-//                     function mousemove(event) {
-//                         console.log(event.clientX, event.clientY);
-//                         var w = ($element[0].scrollHeight)/2;
-//                         var h = ($element[0].scrollHeight)/2;
-//                         var center_x = ($element[0].offsetLeft) +w;
-//                         var center_y = ($element[0].offsetTop) +h;       
-//                         var mouse_x = event.clientX;
-//                         var mouse_y = event.clientY; 
-//                         var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y); 
-//                         var degree = ((radians * (180 / Math.PI)* -1)) + 90;
-//                         // var degree = -((radians * (180 / Math.PI))+ 90);
-//                         $element.css({transform: `rotate(${degree}deg)`});
-//                     }    
-//                     function mouseup() {
-//                         $element.css({cursor: "grab"});
-
-//                         $document.unbind("mousemove", mousemove);
-//                         $document.unbind("mouseup", mouseup);
-//                         $document.unbind("touchmove",mousemove);
-//                         $document.unbind ("touchend", mouseup);
-//                     }
-                
-//                 })
-//             }, 1600);
-//         }
-//     };
-// }
-
-
-// angular
-//     .module("App")
-//     .directive("turn", turn);

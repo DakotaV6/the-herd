@@ -193,6 +193,9 @@ body {
 /*******************/
 /******ANIMALS******/
 /*******************/
+.tablet-only {
+    display: none;
+}
 .animal-anim {
     -webkit-animation: 
     tada
@@ -211,13 +214,6 @@ body {
 .animals {
     width: 35%;
     cursor: grab;
-}
-
-#animal-crate {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
-    height: 125px;
 }
 #animal-crate .bars {
     width: 35%;
@@ -426,6 +422,18 @@ iframe {
 /******MEDIA QUERIES******/
 /*************************/
 @media only screen and (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+    .tablet-only {
+        display: block;
+    }
+    #animal-crate {
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        height: 125px;
+    }
     .game-title {
         font-size: 30px;
     }

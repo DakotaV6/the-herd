@@ -52,8 +52,3 @@ const about = {
 angular
   .module("App")
   .component("about", about);
-
-    // need to call $ctrl.getPlaylist();
-    // <section ng-repeat= "playlist in $ctrl.playlists">
-    //     <p>{{playlist.name}}</p>
-    // </section>`

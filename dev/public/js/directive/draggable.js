@@ -12,6 +12,7 @@ function draggable($timeout, $document, $location) {
                             event.preventDefault();
                             startX = event.screenX;
                             startY = event.screenY;
+                            $element.css({cursor: "grabbing"})
                             $document.on("mousemove", mousemove);
                             $document.on("mouseup", mouseup);
                         })
@@ -21,6 +22,7 @@ function draggable($timeout, $document, $location) {
                             startY = event.screenY;
                             $document.on("touchmove", mousemove);
                             $document.on("touchend", mouseup);
+
                         })
                     function mousemove(event) {
                         y = event.screenY - startY;
@@ -33,6 +35,7 @@ function draggable($timeout, $document, $location) {
                         })
                     }
                     function mouseup(event) {
+                        $element.css({cursor: "grab"})
                         endY = event.screenY;
                         var distanceTraveled = startY - endY;
                         if (distanceTraveled >= 200) {

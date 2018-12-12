@@ -379,6 +379,7 @@ body {
     font-size: 21px;
     color: whitesmoke;
     padding: 20px 10px; 
+    max-width: 200px;
 }
 .fav-list {
     padding: 0;
@@ -403,7 +404,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 20px;
-    background-color: black;
+    background-color: rgba(216, 216, 216, 0.2);
 }
 .playlist-cover {
     height: 80px;
@@ -459,6 +460,9 @@ iframe {
     }
     .fav-container {
         max-width: 450px;
+    }
+    .favs {
+        max-width: 280px;
     }
     .material-icons {
         font-size: 35px;

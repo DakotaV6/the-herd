@@ -8,7 +8,7 @@ const shapes = {
             vm.nextUp = () => {
                 $timeout(function() {
                     $scope.$apply(function() {
-                        $location.path("/results");
+                        $location.path("/5");
                     });
                 }, 900);
             };

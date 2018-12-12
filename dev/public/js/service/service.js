@@ -5,6 +5,7 @@ function ProjectService($http, $location, $timeout) {
     self.playlistLinks = [];
     self.favePlaylists = [];
     self.scoreBoard = 0;
+    self.userName = "";
     self.getPlaylists = () => {
         return $http({
             method: "GET",

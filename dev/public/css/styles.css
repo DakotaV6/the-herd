@@ -273,6 +273,42 @@ body {
 }
 
 /*************************/
+/********WHEEL************/
+/*************************/
+
+.name-input {
+    text-align: center;
+    width: 340px;
+    height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    border: transparent;
+    -webkit-appearance: none;
+}
+.dial-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dial {
+    
+    width: 300px;
+    height: 300px;
+}
+
+.min {
+    font-size: 18px;
+}
+
+.max {
+    font-size: 18px;
+}
+
+
+/*************************/
 /*****DRAGGABLE ORBS******/
 /*************************/
 

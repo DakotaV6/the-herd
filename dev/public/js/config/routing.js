@@ -21,7 +21,7 @@ angular
                 template: "<shapes></shapes>"
             })
             .when("/5", {
-                template: "<elements></elements>"
+                template: "<wheel></wheel>"
             })
             .when("/6", {
                 template: "<orbs></orbs>"

@@ -16,14 +16,13 @@ function draggable($timeout, $document, $location) {
                             $document.on("mousemove", mousemove);
                             $document.on("mouseup", mouseup);
                         })
-                        .on("touchstart", (event) => {
-                            event.preventDefault();
-                            startX = event.screenX;
-                            startY = event.screenY;
-                            $document.on("touchmove", mousemove);
-                            $document.on("touchend", mouseup);
-
-                        })
+                        // .on("touchstart", (event) => {
+                        //     event.preventDefault();
+                        //     startX = event.screenX;
+                        //     startY = event.screenY;
+                        //     $document.on("touchmove", mousemove);
+                        //     $document.on("touchend", mouseup);
+                        // })
                     function mousemove(event) {
                         y = event.screenY - startY;
                         x = event.screenX - startX;
@@ -66,9 +65,9 @@ function draggable($timeout, $document, $location) {
                         }
                         
                         $document.unbind("mousemove", mousemove);
-                        $document.unbind("touchmove", mousemove);
+                        // $document.unbind("touchmove", mousemove);
                         $document.unbind("mouseup", mouseup);
-                        $document.unbind("touchend", mouseup);
+                        // $document.unbind("touchend", mouseup);
                     }
                 })
             }, 1600);

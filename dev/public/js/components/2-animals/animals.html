@@ -1,16 +1,18 @@
 <section  class="component-container">
-    <div id="animal-crate">
+    <!-- <div class="tablet-only" id="animal-crate">
         <div class="bars bar-left"></div>
         <div class="bars bar-middle"></div>
         <div class="bars bar-right"></div>
-    </div>
-    <p class="game-title">Move an animal to the crate.</p>
+    </div> -->
+    <i class="fab fa-fort-awesome tablet-only animal-anim" id="animal-fort"></i>
+    <p class="game-title mobile-only">Choose a pet.</p>
+    <p class="game-title tablet-only">Move a pet to the castle.</p>
     <section ng-class="{'animated bounceOutLeft': $ctrl.bounceOutBool === true}" class="game-container">
 
-        <img draggable ng-click="$ctrl.addScore();" class="animals animal-anim" src="images/dog.svg" >
-        <img draggable ng-click="$ctrl.addScore();" class="animals animal-anim" src="images/fox.svg" >
-        <img draggable ng-click="$ctrl.addScore();" class="animals animal-anim" src="images/capybara.svg" >
-        <img draggable ng-click="$ctrl.addScore();" class="animals animal-anim" src="images/giraffe.svg" >
+        <img draggable ng-click="$ctrl.addScore();" class="animals " src="images/dog.svg" >
+        <img draggable ng-click="$ctrl.addScore();" class="animals " src="images/fox.svg" >
+        <img draggable ng-click="$ctrl.addScore();" class="animals " src="images/capybara.svg" >
+        <img draggable ng-click="$ctrl.addScore();" class="animals " src="images/giraffe.svg" >
 
         <!-- DOG SVG -->
         <!-- <section class="dog-box" hide-animal></section> -->

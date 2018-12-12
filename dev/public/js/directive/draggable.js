@@ -37,6 +37,7 @@ function draggable($timeout, $document, $location, $window) {
                             endY = event.screenY;
                             var distanceTraveled = startY - endY;
                             if (distanceTraveled >= 200) {
+                                $element.addClass("animal-anim");
                                 hideAnimals();
                             } else if (distanceTraveled < 200) {
                                 $element.css({

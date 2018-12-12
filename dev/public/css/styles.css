@@ -429,11 +429,8 @@ iframe {
     .tablet-only {
         display: block;
     }
-    #animal-crate {
-        display: flex;
-        justify-content: space-around;
-        width: 150px;
-        height: 125px;
+    #animal-fort {
+        font-size: 110px;
     }
     .game-title {
         font-size: 30px;

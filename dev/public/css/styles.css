@@ -210,8 +210,9 @@ body {
 }
 .animals {
     width: 35%;
-    cursor: pointer;
+    cursor: grab;
 }
+
 #animal-crate {
     display: flex;
     justify-content: space-around;

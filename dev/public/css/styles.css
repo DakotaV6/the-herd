@@ -379,7 +379,10 @@ body {
     color: whitesmoke;
     padding: 20px 10px; 
 }
-.fav-list{
+.fav-list {
+    padding: 0;
+}
+.fav-playlist{
     list-style-type: none;
     width: 98%;
     display: flex;
@@ -388,7 +391,7 @@ body {
     align-items: center;
     padding: 5px;
 }
-.fav-list:hover {
+.fav-playlist:hover {
     background-color: rgba(255, 255, 255, 0.35);
 }
 .fav-container {

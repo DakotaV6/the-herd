@@ -5,7 +5,8 @@ const animals = {
     controller: ["ProjectService", "$location", "$timeout", "$scope", function (ProjectService, $location, $timeout, $scope) {
         const vm = this;
         $timeout(function () {
-            vm.addScore = (num) => {
+            vm.addScore = () => {
+                var num = Math.floor(Math.random() * 3);
                 ProjectService.addScore(num);
             };
         }, 1600);

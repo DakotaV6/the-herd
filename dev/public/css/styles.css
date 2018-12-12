@@ -208,105 +208,27 @@ body {
     1.5s
     infinite;      
 }
-/* .dog-box {
-    position: absolute;
-    background-color: rgba(255, 255, 255, .5);
-    height: 30vw;
-    width: 35vw;
-    margin: 0;
-    z-index: 999999;
-    top: 70vw;
-    left: 9vw;
-}
-
-.fox-box {
-    position: absolute;
-    background-color: rgba(255, 255, 255, .5);
-    height: 35vw;
-    width: 35vw;
-    margin: 0;
-    z-index: 999999;
-    top: 70vw;
-    right: 5vw;
-}
-.capybara-box {
-
-}
-.giraffe-box {
-
-} */
 .animals {
     width: 35%;
     cursor: pointer;
 }
-/* CAPYBARA */
-.capybara-color-1 {
-    fill: #878791;
+#animal-crate {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 125px;
 }
-.capybara-color-2 {
-    fill: #c39b6e;
+#animal-crate .bars {
+    width: 35%;
+    height: 100%;
+    border: 3px solid black;
+    background-color: rgba(216, 216, 216, 0.2);
 }
-.capybara-color-3 {
-    fill: #ac8a67;
+#animal-crate .bar-left {
+    border-right: none;
 }
-.capybara-color-4 {
-    fill: #c0c0c6;
-}
-.capybara-color-5 {
-    fill: #9e9ea6;
-}
-.capybara-color-6 {
-    fill: #464655;
-}
-.capybara-eyes {
-    -webkit-animation: blink 3s infinite;
-    -moz-animation: blink 3s infinite;
-    -o-animation: blink 3s infinite;
-    animation: blink 3s infinite;
-}
-/* DOG */
-.dog-color-1 {
-    fill: #963;
-}
-.dog-color-2 {
-    fill: #ededed;
-}
-.dog-color-3 {
-    fill: #878786;
-}
-.dog-color-4 {
-    fill: #7c522c;
-}
-
-/* FOX */
-.fox-color-1 {
-    fill: #f7f6e2;
-}
-.fox-color-2 {
-    fill: #c9c7b8;
-}
-.fox-color-3 {
-    fill: #ffa54b;
-}
-.fox-color-4 {
-    fill: #ff8c46;
-}
-
-/* GIRAFFE */
-.giraffe-color-1 {
-    fill: #db9437;
-}
-.giraffe-color-2 {
-    fill: #f3b73f;
-}
-.giraffe-color-3 {
-    fill: #e7a53b;
-}
-.giraffe-color-4 {
-    fill: #ffc843;
-}
-.giraffe-eyes {
-    fill: black;
+#animal-crate .bar-right {
+    border-left: none;
 }
 /******************/
 /******SHAPES******/
@@ -404,7 +326,6 @@ body {
     color: white;
     margin-top: 10px;
 }
-
 .see-favorites {
     cursor: pointer;
     height: 50px;
@@ -415,19 +336,14 @@ body {
     margin-top: 5px;
     margin-right: 15px;
 }
-
-
 .favs {
-    cursor:pointer;
+    text-align: center;
+    cursor: pointer;
     font-size: 21px;
     color: whitesmoke;
-    margin-left: 22px;
-    margin-right: 20px;
+    padding: 20px 10px; 
 }
-
-
 .fav-list{
-    cursor: pointer;
     list-style-type: none;
     width: 98%;
     display: flex;
@@ -436,21 +352,18 @@ body {
     align-items: center;
     padding: 5px;
 }
-
 .fav-list:hover {
     background-color: rgba(255, 255, 255, 0.35);
-
 }
-
 .fav-container {
-    width: 75%;
+    width: 100%;
+    max-width: 359px;
     height: 65%;
     overflow: scroll;
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 20px;
     background-color: black;
-    color: #1DB954;
 }
 .playlist-cover {
     height: 80px;
@@ -458,19 +371,16 @@ body {
     cursor: pointer;
     margin-left: 10px;
 }
-
 iframe {
     width: 300px;
     height: 380px;
 }
-
 .material-icons {
     cursor: pointer;
     font-size: 30px;
-}
-
-.material-icons:hover {
-    font-weight: bolder;
+    font-weight: 600;
+    padding: 10px;
+    color: #1DB954;
 }
 /*************************/
 /******MEDIA QUERIES******/
@@ -500,27 +410,15 @@ iframe {
         width: 70vw;
         height: 100vh;
     }
+    .game-container {
+        height: 400px;
+        max-width: 400px;
+    }
     iframe {
         height: 500px;
     }
-    .fav-list{
-        list-style-type: none;
-        width: 98%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-    }
     .fav-container {
-        width: 75%;
-        height: 65%;
-        overflow: scroll;
-    
-        overflow-x: hidden;
-        border-radius: 20px;
-        background-color: black;
-        color: #1DB954;
+        max-width: 450px;
     }
     .material-icons {
         font-size: 35px;
@@ -530,8 +428,13 @@ iframe {
         width: 125px;
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     .logo {
         max-width: 300px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .logo {
+        max-width: 400px;
     }
 }

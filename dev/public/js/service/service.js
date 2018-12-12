@@ -24,6 +24,7 @@ function ProjectService($http, $location, $timeout) {
         self.playlists = [];
         self.playlistLinks = [];
         self.favePlaylists = [];
+        self.userName = "";
         console.log(`score is ${self.scoreBoard}`);
     };
 

@@ -289,15 +289,16 @@ body {
     -webkit-appearance: none;
 }
 .dial-container {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .dial {
-    
-    width: 300px;
-    height: 300px;
+    cursor: grab;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 .min {
@@ -421,6 +422,10 @@ iframe {
     font-weight: 600;
     padding: 10px;
     color: #1DB954;
+}
+
+.material-icons:hover {
+    font-weight: bolder;
 }
 /*************************/
 /******MEDIA QUERIES******/

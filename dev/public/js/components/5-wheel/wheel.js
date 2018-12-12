@@ -4,7 +4,7 @@ const wheel = {
     templateUrl: "js/components/5-wheel/wheel.html",
     controller: ["ProjectService", "$location", "$timeout", function(ProjectService, $location, $timeout) {
         const vm = this;
-        ProjectService.userName = vm.userName;
+        vm.userName= ProjectService.userName;
         $timeout(function () {
             vm.nextUp = () => {
                 $timeout(function() {

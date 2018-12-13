@@ -1,7 +1,8 @@
 <section class="component-container">
-    <img src= "images/favorites-list.svg" ng-show="$ctrl.favePlaylists.length > 0" class= "see-favorites" ng-click ="$ctrl.goToFavorites();">
+    <img src="images/favorites-list.svg" ng-show="$ctrl.favePlaylists.length > 0" class="see-favorites" ng-click="$ctrl.goToFavorites();">
     <p class="game-title">{{ $ctrl.playlist.name }}</p>
     <iframe ng-src="{{$ctrl.playlist.link}}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <button heart-color class="add-fave" ng-click="$ctrl.saveToFavorites();" ng-disabled = "$ctrl.isDisabled === true">favorite <i class="fas fa-heart"></i></button>
+    <button heart-color class="add-fave" ng-click="$ctrl.saveToFavorites();" ng-disabled="$ctrl.isDisabled === true">favorite
+        <i class="fas fa-heart"></i></button>
     <p class="new-playlist" ng-click="$ctrl.nextUp();">Get a new playlist.</p>
 </section>

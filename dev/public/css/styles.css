@@ -7,7 +7,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -20,14 +19,12 @@ body {
     font-weight: 700;
     font-size: 25px;
 }
-
 .view-animation.ng-enter {
     -webkit-animation: zoomIn 1.5s;
     -moz-animation: zoomIn 1.5s;
     -o-animation: zoomIn 1.5s;
     animation: zoomIn 1.5s;
 }
-
 .view-animation.ng-leave {
     -webkit-animation: bounceOutRight 1s;
     -moz-animation: bounceOutRight 1s;
@@ -263,7 +260,6 @@ body {
 #diamondOption {
     cursor: pointer;
 }
-
 .diamond {
     fill: rgb(163, 125, 183);
     margin: auto;
@@ -296,15 +292,12 @@ body {
     height: 250px;
     border-radius: 50%;
 }
-
 .min {
     font-size: 18px;
 }
-
 .max {
     font-size: 18px;
 }
-
 
 /*************************/
 /*****DRAGGABLE ORBS******/
@@ -320,8 +313,8 @@ body {
     overflow: hidden;
     border-radius: 7px;
     touch-action: none;
-  }
-  #item {
+}
+#item {
     width: 100px;
     height: 100px;
     background-color: rgb(245, 230, 99);
@@ -329,14 +322,14 @@ body {
     border-radius: 50%;
     touch-action: none;
     user-select: none;
-  }
-  #item:active {
+}
+#item:active {
     background-color: rgba(168, 218, 220, 1.00);
-  }
-  #item:hover {
+}
+#item:hover {
     cursor: pointer;
     border-width: 20px;
-  }
+}
 
 /******************/
 /*****RESULTS******/
@@ -420,7 +413,6 @@ iframe {
     padding: 10px;
     color: #1DB954;
 }
-
 .material-icons:hover {
     font-weight: bolder;
 }

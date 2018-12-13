@@ -2,15 +2,13 @@
 
 const favResults = {
     templateUrl: "js/components/fav-results/fav-results.html",
-    controller: ["ProjectService", "$location", function(ProjectService, $location) {
+    controller: ["ProjectService", "$location", function (ProjectService, $location) {
         const vm = this;
-        vm.favePlaylists = ProjectService.favePlaylists; 
-
-        vm.getPlaylist= () => {
+        vm.favePlaylists = ProjectService.favePlaylists;
+        vm.getPlaylist = () => {
             vm.playlist = ProjectService.setFavorite();
         };
         vm.getPlaylist();
-
         vm.nextUp = () => {
             $location.path("/new-playlist");
         };
@@ -20,6 +18,6 @@ const favResults = {
     }]
 };
 
-angular 
+angular
     .module("App")
     .component("favResults", favResults);

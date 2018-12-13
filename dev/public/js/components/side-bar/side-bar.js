@@ -12,7 +12,6 @@ const sideBar = {
     }]
 }; 
 
-
 angular
     .module("App")
     .component("sideBar", sideBar);

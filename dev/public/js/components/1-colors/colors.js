@@ -2,44 +2,41 @@
 
 const colors = {
     templateUrl: "js/components/1-colors/colors.html",
-    controller: ["ProjectService", "$location", "$timeout", "$scope", function(ProjectService,$location, $timeout, $scope) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", function (ProjectService, $location, $timeout, $scope) {
         const vm = this;
-        $timeout(function() {
+        $timeout(function () {
             vm.rippleEffect = () => {
                 anime({
-                targets: event.target,
-                opacity: {
-                    value: [1, 0],
-                    duration: 2000
-                  },
-                  scale: {
-                    value: 10,
-                    duration: 2000
-                  },
+                    targets: event.target,
+                    opacity: {
+                        value: [1, 0],
+                        duration: 2000
+                    },
+                    scale: {
+                        value: 10,
+                        duration: 2000
+                    },
                 });
             };
             vm.nextUp = () => {
-                $timeout(function() {
-                    $scope.$apply(function() {
+                $timeout(function () {
+                    $scope.$apply(function () {
                         $location.path("/2");
                     });
                 }, 700);
             }
             vm.getLinks = () => {
-                ProjectService.playlistList(); 
+                ProjectService.playlistList();
             };
         }, 1600);
-
-        $timeout (function() {
+        $timeout(function () {
             vm.addScore = (num) => {
                 ProjectService.addScore(num);
             };
         }, 1600);
-        
-        
     }]
 };
 
-angular 
+angular
     .module("App")
     .component("colors", colors);

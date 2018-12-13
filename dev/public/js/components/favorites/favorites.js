@@ -2,7 +2,7 @@
 
 const favorites = {
     templateUrl: "js/components/favorites/favorites.html",
-    controller: ["ProjectService", "$location", function(ProjectService, $location) {
+    controller: ["ProjectService", "$location", function (ProjectService, $location) {
         const vm = this;
         vm.userName = ProjectService.userName;
         console.log(vm.userName);
@@ -16,7 +16,6 @@ const favorites = {
         };
     }]
 };
-
 
 angular
     .module("App")

@@ -12,7 +12,6 @@ function draggable($timeout, $document, $location, $window) {
                 var startX = 0, startY = 0, endY = 0, x = 0, y = 0;
                 $timeout(function () {
                     $scope.$apply(function () {
-
                         $element
                             .on("mousedown", (event) => {
                                 event.preventDefault();
@@ -72,7 +71,6 @@ function draggable($timeout, $document, $location, $window) {
                     });
                 }, 1600);
             }
-
         }
     }
 }

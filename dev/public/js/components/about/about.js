@@ -1,19 +1,14 @@
 "use strict";
 const about = {
-  templateUrl: "js/components/about/about.html"
-  ,
-
+  templateUrl: "js/components/about/about.html",
   controller: ["ProjectService", "$location", function (ProjectService, $location) {
     const vm = this;
-
     vm.startQuestions = () => {
       $location.path("/1");
     };
-
     vm.getPlaylists = () => {
       ProjectService.getPlaylists();
-  };
-
+    };
     anime({
       targets: '.sound-line',
       strokeDashoffset: function (el) {
@@ -47,7 +42,6 @@ const about = {
 
   }]
 };
-
 
 angular
   .module("App")

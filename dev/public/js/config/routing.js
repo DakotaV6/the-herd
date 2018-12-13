@@ -23,9 +23,6 @@ angular
             .when("/5", {
                 template: "<wheel></wheel>"
             })
-            .when("/6", {
-                template: "<orbs></orbs>"
-            })
             .when("/results", {
                 template: "<results></results>"
             })

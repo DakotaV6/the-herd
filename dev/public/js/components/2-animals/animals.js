@@ -10,8 +10,6 @@ const animals = {
                 ProjectService.addScore(num);
             };
         }, 1600);
-
-
     }]
 };
 angular

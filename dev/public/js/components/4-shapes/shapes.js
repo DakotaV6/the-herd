@@ -6,8 +6,8 @@ const shapes = {
         const vm = this;
         $timeout(function () {
             vm.nextUp = () => {
-                $timeout(function() {
-                    $scope.$apply(function() {
+                $timeout(function () {
+                    $scope.$apply(function () {
                         if ($window.innerWidth < 768) {
                             $location.path("/results");
                         } else {
@@ -53,7 +53,6 @@ const shapes = {
                 });
             };
         }, 1600);
-
         $timeout(function () {
             vm.addScore = (num) => {
                 ProjectService.addScore(num);

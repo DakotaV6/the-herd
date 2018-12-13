@@ -14,7 +14,6 @@ function ProjectService($http, $location, $timeout) {
             self.playlists = response.data.playlists.items;
         });
     };
-
     self.addScore = (num) => {
         self.scoreBoard += num;
         console.log(`score is ${self.scoreBoard}`);
@@ -27,7 +26,6 @@ function ProjectService($http, $location, $timeout) {
         self.userName = "";
         console.log(`score is ${self.scoreBoard}`);
     };
-
     self.playlistList = () => {
         for (let playlist of self.playlists) {
             self.playlistLinks.push({

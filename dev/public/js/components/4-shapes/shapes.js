@@ -2,13 +2,17 @@
 
 const shapes = {
     templateUrl: "js/components/4-shapes/shapes.html",
-    controller: ["ProjectService", "$location", "$timeout", "$scope", function (ProjectService, $location, $timeout, $scope) {
+    controller: ["ProjectService", "$location", "$timeout", "$scope", "$window", function (ProjectService, $location, $timeout, $scope, $window) {
         const vm = this;
         $timeout(function () {
             vm.nextUp = () => {
                 $timeout(function() {
                     $scope.$apply(function() {
-                        $location.path("/5");
+                        if ($window.innerWidth < 768) {
+                            $location.path("/results");
+                        } else {
+                            $location.path("/5");
+                        }
                     });
                 }, 900);
             };

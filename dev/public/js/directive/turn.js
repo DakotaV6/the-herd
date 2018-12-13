@@ -57,7 +57,6 @@ function turn ($timeout,$document, $location) {
                 };
                 
                 rotate = function(e) {
-                    console.log(window.location);
                     var d, x, y;
                     e.preventDefault();
                     x = e.clientX - center.x;
@@ -65,8 +64,6 @@ function turn ($timeout,$document, $location) {
                     d = R2D * Math.atan2(y, x);
                     rotation = d - startAngle;
                     if (active) {
-
-                        console.log(this.style.transform);
                         let originalValue = this.style.transform.split("");         
                         let newValue = originalValue.slice(7);
                         newValue.pop();
@@ -74,7 +71,6 @@ function turn ($timeout,$document, $location) {
                         newValue.pop();
                         newValue.pop();
                         let finalValue = Math.floor(Number(newValue.join("")));
-                        console.log(finalValue);
                         if (finalValue === 178 || finalValue === -178 ) {
                             window.location.hash = "#!/results"
                         }
@@ -93,10 +89,6 @@ function turn ($timeout,$document, $location) {
     };
 }
 
-
 angular
     .module("App")
     .directive("turn", turn);
-
-
-
